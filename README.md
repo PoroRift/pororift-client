@@ -1,4 +1,5 @@
 # PORORIFT CLIENT
+Using [this](https://github.com/airbnb/javascript/tree/master/react) style guide.
 
 ## Basic React Base with Webpack 4
 
