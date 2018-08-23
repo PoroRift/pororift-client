@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Background from "./components/Background.js";
+import Topbar from "./components/Topbar.js";
+
+import './index.css';
 
 const Index = () => {
-	return <div>Hello PoroRift!</div>;
+	return  <div className= "Index">
+					<Background />
+			  	<Topbar />
+					</div>;
 };
 
 ReactDOM.render(<Index />, document.getElementById("index"));
-

@@ -1,0 +1,28 @@
+
+body {
+
+}
+
+.bg {
+  background-image: url('./images/rift.jpg');
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+.topbar {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+  position:absolute;
+  top:0px ;
+  left: 0px;
+
+
+}
