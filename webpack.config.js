@@ -14,22 +14,18 @@ module.exports = {
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader"
-        }
-				},
+      	}
+			},
 
-
-
-        {
+      {
         test:/\.css$/,
-        loader: [ 'style-loader', 'css-loader' ],
-
+        use: [ 'style-loader', 'css-loader' ],
       },
+
        {
          test: /\.jpg$/,
          use:'file-loader'
        }
-
-
 		]
 	},
 	plugins: [htmlPlugin]
