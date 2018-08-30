@@ -6,7 +6,7 @@ const Background=(props)=>{
       <div id="logoBackground">
         <img
           id='logo'
-          src={require('../images/PoroLogo.png')}
+          src={require('../images/pororift-logo.png')}
           alt = ""
         />
       <div className="text">
