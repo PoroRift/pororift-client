@@ -6,6 +6,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+  
 
 	module: {
 		rules: [
@@ -33,7 +34,8 @@ module.exports = {
                  name: 'images/[hash]-[name].[ext]'
        }
      }]
-   }
+   },
+
 
 
 		]

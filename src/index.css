@@ -2,26 +2,25 @@
 body {
   background-image: url('./images/rift.jpg');
   width: 100%;
-  heigh: 100px;
+  height: 100%
 }
+
 img {
   opacity: 0.7;
   height: 25px;
   width: 25px;
   margin-left: auto;
-	margin-right:inherit;
+  margin-right:inherit;
   margin-top: 5px;
-	display: block;
+  display: block;
 }
 
 button {
-  background-color: Transparent;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
-  overflow: hidden;
   outline:none;
-
 }
 
 input {
@@ -29,35 +28,15 @@ input {
   height:25px;
 }
 
-
-form {
-  width:500px;
-}
-
-
-.img2{
-  margin-right: 10px;
-  margin-top: 25px;
+#logo{
+  margin: 25px 10px 0px 10px;
   opacity: 1;
   height: 40px;
   width: 280px;
-
-
-}
-.bg {
-  background-image: url('./images/rift.jpg');
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index:-1;
 }
 
-.bg2 {
-  line-height: 100px;
+#logoBackground {
+  line-height: 20px;
   text-align:center;
   color: white;
   background-color: black;
@@ -86,26 +65,27 @@ form {
   margin-left: -14em;
 }
 
-.box{
+#searchBox{
   display: inline-block;
   opacity: .7;
   z-index: 1;
   position:fixed;
   top: 50%;
   left: 50%;
-  margin-top: 8em;
+  margin-top: 5.5em;
   margin-left: -8em;
 }
-.box2{
+
+#searchButtonBox{
   z-index: 1;
   position:fixed;
   top: 50%;
   left: 50%;
-  margin-top: 7.8em;
+  margin-top: 5.3em;
   margin-left: 8.8em;
 }
 
-.topnav {
+#topnav {
   background-color: black;
   opacity: 0.7;
   height: 40px;
@@ -116,22 +96,20 @@ form {
   left: 0px;
 }
 
-.search {
+#search {
   padding:8px 15px;
   background:rgba(50, 50, 50, 0.2);
   border:0px solid #dbdbdb;
 }
 
-
-.btn {
-
-    opacity: 0.7;
-    border: none;
-    color: white;
-    padding: 3px 6px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right:inherit;
-    display: block;
+#topnavButton {
+  opacity: 0.7;
+  border: none;
+  color: white;
+  padding: 3px 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right:inherit;
+  display: block;
 }
