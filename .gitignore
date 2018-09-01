@@ -1,2 +1,6 @@
+# Node.js
 node_modules/
 dist/
+
+# We dont need to track log files
+*.log

@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../index.css';
 
-const Background=(props)=>{
-    return (
-      <div id="logoBackground">
-        <img
-          id='logo'
-          src={require('../images/pororift-logo.png')}
-          alt = ""
-        />
-      <div className="text">
-        ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS
-      </div>
+const Background = (props) => {
+  return (
+    <div id="logoBackground">
+      {props.children}
     </div>
-    );
-  }
+  );
+}
 
-  export{Background}
+export default Background;

@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 import '../index.css';
 
 class Searchbar extends Component {
-  clicked(){
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      searchQuery: ""
+    };
+
+    this.search = this.search.bind(this);
+  }
+
+  search(){
     alert('Something is supposed to happen here.. heh.. ¯\\_(ツ)_/¯');
   }
+  
   render() {
     return (
         <div id="Searchbar">
@@ -16,7 +27,7 @@ class Searchbar extends Component {
             />
           </div>
           <div id="searchButtonBox">
-            <button onClick={this.clicked}><img src={require('../images/s1.png')} alt = "" /></button>
+            <button onClick={this.search}><img src={require('../images/search-icon.png')} alt = "" /></button>
           </div>
         </div>
     );
