@@ -7,19 +7,18 @@ import './index.css';
 
 const Index = () => {
   return(
-    <div className= "index">
-      <Background>
-        <img
-          id="logo"
-          src={require('./images/pororift-logo.png')}
-          alt="PORORIFT Logo"
-        />
-        <div className="text">ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</div>
-      </Background>
+    <Background imagePath="https://bit.ly/2MPhVLe">
       <NavBar />
+      <img
+        id="logo"
+        src={require('./images/pororift-logo.png')}
+        alt="PORORIFT Logo"
+      />
+      <div className="text">ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</div>
+
       <Searchbar />
-    </div>
+    </Background>
 	)
 };
 
-ReactDOM.render(<Index />, document.getElementById('index'));
+ReactDOM.render(<Index />, document.getElementById('root'));

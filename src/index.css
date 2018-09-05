@@ -1,8 +1,17 @@
-
 body {
-  background-image: url('./images/rift.jpg');
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
   width: 100%;
-  height: 100%
+  height: 100%;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
 }
 
 img {
@@ -11,7 +20,6 @@ img {
   width: 25px;
   margin-left: auto;
   margin-right:inherit;
-  margin-top: 5px;
   display: block;
 }
 
@@ -29,26 +37,9 @@ input {
 }
 
 #logo{
-  margin: 25px 10px 0px 10px;
   opacity: 1;
   height: 40px;
   width: 280px;
-}
-
-#logoBackground {
-  line-height: 20px;
-  text-align:center;
-  color: white;
-  background-color: black;
-  opacity: 0.7;
-  height: 100px;
-  width:300px;
-  z-index: 1;
-  position:fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -7em;
-  margin-left: -8em;
 }
 
 .text {

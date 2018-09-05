@@ -3,7 +3,7 @@ import '../index.css';
 
 const Background = (props) => {
   return (
-    <div id="logoBackground">
+    <div className="fullscreen" style={{ backgroundColor: props.color, backgroundImage: 'url(' + props.imagePath + ')' }}>
       {props.children}
     </div>
   );
