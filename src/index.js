@@ -22,4 +22,4 @@ const Index = () => {
 	)
 };
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Index />, document.getElementById('index'));
