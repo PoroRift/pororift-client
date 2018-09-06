@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 
-class Topnav extends Component {
+class NavBar extends Component {
   clicked(){
     alert('Something is supposed to happen here.. heh.. ¯\\_(ツ)_/¯');
   }
@@ -16,4 +16,5 @@ class Topnav extends Component {
     );
   }
 }
-export default Topnav;
+
+export default NavBar;

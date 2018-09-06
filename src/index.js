@@ -9,16 +9,26 @@ const Index = () => {
   return(
     <Background imagePath="https://bit.ly/2MPhVLe">
       <NavBar />
-      <img
-        id="logo"
-        src={require('./images/pororift-logo.png')}
-        alt="PORORIFT Logo"
-      />
-      <div className="text">ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</div>
-
-      <Searchbar />
+      <div style={style.centerpeice}>
+        <img
+          src={require('./images/pororift-logo.png')}
+          alt="PORORIFT Logo"
+        />
+        <p>ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</p>
+        <Searchbar />
+      </div>
     </Background>
 	)
 };
+
+const style = {
+  centerpeice: {
+    marginTop: '25vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}
 
 ReactDOM.render(<Index />, document.getElementById('root'));

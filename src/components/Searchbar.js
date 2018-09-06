@@ -18,19 +18,18 @@ class Searchbar extends Component {
   
   render() {
     return (
-        <div id="Searchbar">
-          <div id="searchBox">
-            <input
-              type="text"
-              placeholder="ENTER SUMMONER NAME"
-              maxLength="16"
-            />
-          </div>
-          <div id="searchButtonBox">
-            <button onClick={this.search}><img src={require('../images/search-icon.png')} alt = "" /></button>
-          </div>
-        </div>
+      <div id="searchBox">
+        <input
+          type="text"
+          placeholder="ENTER SUMMONER NAME"
+          maxLength="16"
+        />
+        <button onClick={this.search}>
+          <img src={require('../images/search-icon.png')} alt = "" />
+        </button>
+      </div>
     );
   }
 }
+
 export default Searchbar;
