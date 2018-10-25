@@ -8,7 +8,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div style={style.navbar}>
+      <div style={style.navBar}>
         <button id="topnavButton" onClick={this.clicked}>
           <Icon icon="search" size="20" color="rgba(255,255,255,0.7)"/>
         </button>
@@ -18,7 +18,7 @@ class NavBar extends Component {
 }
 
 const style = {
-  navbar: {
+  navBar: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-end',
