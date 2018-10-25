@@ -1,9 +1,9 @@
 import React from 'react';
-import '../index.css';
 
 const Background = (props) => {
+  const { color, imagePath } = props;
   return (
-    <div className="fullscreen" style={{ backgroundColor: props.color, backgroundImage: 'url(' + props.imagePath + ')' }}>
+    <div className="fullscreen" style={{ backgroundColor: color, backgroundImage: 'url(' + imagePath + ')' }}>
       {props.children}
     </div>
   );

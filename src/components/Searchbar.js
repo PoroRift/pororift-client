@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
+import Icon from './Icon';
 
 class Searchbar extends Component {
   constructor(props) {
@@ -18,17 +19,24 @@ class Searchbar extends Component {
   
   render() {
     return (
-      <div id="searchBox">
+      <div id="searchBox" style={style.searchBox}>
         <input
           type="text"
           placeholder="ENTER SUMMONER NAME"
           maxLength="16"
         />
         <button onClick={this.search}>
-          <img src={require('../images/search-icon.png')} alt = "" />
+          <Icon icon="search" size="30" color="rgba(255,255,255,0.7)"/>
         </button>
       </div>
     );
+  }
+}
+
+const style = {
+  searchBox: {
+    display: 'flex',
+    alignItems: 'center'
   }
 }
 
