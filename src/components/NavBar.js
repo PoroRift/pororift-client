@@ -8,12 +8,26 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div id="topnav">
+      <div style={style.navbar}>
         <button id="topnavButton" onClick={this.clicked}>
-          <img src={require('../images/s2.png')} alt="" />
+          <img src={require('../images/s2.png')} alt="" style={style.icon}/>
         </button>
       </div>
     );
+  }
+}
+
+const style = {
+  navbar: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    height: '40px'
+  },
+  icon: { // Can make into a component with size prop.
+    width: '25px',
+    height: '25px'
   }
 }
 
