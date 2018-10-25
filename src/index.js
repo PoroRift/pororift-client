@@ -15,7 +15,7 @@ const Index = () => {
           alt="PORORIFT Logo"
         />
         <p>ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</p>
-        <Searchbar />
+        <Searchbar style={style.searchbar}/>
       </div>
     </Background>
 	)
@@ -28,6 +28,9 @@ const style = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  searchbar: {
+    marginTop: '30px'
   }
 }
 

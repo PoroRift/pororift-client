@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import Icon from './Icon';
 
 class Searchbar extends Component {
@@ -19,15 +18,17 @@ class Searchbar extends Component {
   
   render() {
     return (
-      <div id="searchBox" style={style.searchBox}>
-        <input
-          type="text"
-          placeholder="ENTER SUMMONER NAME"
-          maxLength="16"
-        />
-        <button onClick={this.search}>
-          <Icon icon="search" size="30" color="rgba(255,255,255,0.7)"/>
-        </button>
+      <div style={this.props.style}>
+        <div style={style.searchBox}>
+          <input
+            type="text"
+            placeholder="ENTER SUMMONER NAME"
+            maxLength="30"
+          />
+          <button onClick={this.search} style={style.searchButton}>
+            <Icon icon="search" size="28" color="rgba(255,255,255,0.7)"/>
+          </button>
+        </div>
       </div>
     );
   }
@@ -37,6 +38,9 @@ const style = {
   searchBox: {
     display: 'flex',
     alignItems: 'center'
+  },
+  searchButton: {
+    marginLeft: '5px'
   }
 }
 
