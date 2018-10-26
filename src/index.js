@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Background from './components/Background.js';
-import SearchBar from './components/Searchbar.js';
-import NavBar from './components/NavBar.js';
-import './index.css';
+import Background from './components/Background';
+import SearchBar from './components/Searchbar';
+import NavBar from './components/NavBar';
 
 const Index = () => {
   return(
@@ -15,7 +14,7 @@ const Index = () => {
           alt="PORORIFT Logo"
         />
         <p>ENTER SUMMONER NAME FOR CURRENT GAME OR USER STATS</p>
-        <SearchBar style={style.searchBar}/>
+        <SearchBar style={style.searchBar} inputWidth="300px" inputHeight="25px"/>
       </div>
     </Background>
 	)

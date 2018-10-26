@@ -9,7 +9,7 @@ class NavBar extends Component {
   render() {
     return (
       <div style={style.navBar}>
-        <button id="topnavButton" onClick={this.clicked}>
+        <button onClick={this.clicked}>
           <Icon icon="search" size="20" color="rgba(255,255,255,0.7)"/>
         </button>
       </div>

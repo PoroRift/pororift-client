@@ -1,7 +1,7 @@
 {
   "name": "pororift-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Client for the PORORIFT web application to look up in-game stats.",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_PATH=src webpack-dev-server --mode development --open",
@@ -23,10 +23,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^0.22.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",

@@ -17,10 +17,13 @@ class SearchBar extends Component {
   }
   
   render() {
+    const { inputWidth, inputHeight } = this.props;
+
     return (
       <div style={this.props.style}>
         <div style={style.searchBox}>
           <input
+            style={{ width: inputWidth, height: inputHeight }}
             type="text"
             placeholder="ENTER SUMMONER NAME"
             maxLength="30"
@@ -44,4 +47,4 @@ const style = {
   }
 }
 
-export default Searchbar;
+export default SearchBar;
