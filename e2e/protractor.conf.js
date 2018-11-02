@@ -1,6 +1,11 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
+// just don't touch this shit .... unless if you really really 
+// want to do stuff with end to end testing.  If you really want to 
+// do e2e testing, you need to make modifications to `jasmin-spec-reporter` 
+// and change the framework to jest.
+
 const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
