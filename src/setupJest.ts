@@ -1,6 +1,6 @@
 import 'jest-preset-angular';
+import 'jest';
 
-Error.stackTraceLimit = 2;
 
 Object.defineProperty(document.body.style, 'transform', {
     value: () => {
