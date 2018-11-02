@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
@@ -9,7 +10,11 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     SideBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
+  ],
+  exports: [
+    SideBarComponent
   ]
 })
 export class LayoutModule { }
