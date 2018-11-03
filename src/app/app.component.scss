@@ -3,5 +3,10 @@
     mat-drawer-container{
         height: -webkit-fill-available;
         overflow-x: hidden;
+        mat-drawer-content{
+            background: url('https://bit.ly/2Oksjq1');
+            height: -webkit-fill-available;
+            background-size: cover;
+        }
     }
 }

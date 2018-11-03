@@ -1,4 +1,13 @@
+@import '~@angular/material/theming';
+
 :host{
+    .logo{
+        padding: 0;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
     .search-bar{
         border-radius: 10px;
         border: none;
