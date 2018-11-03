@@ -1,0 +1,9 @@
+:host{
+    .search-bar{
+        border-radius: 10px;
+        border: none;
+    }
+    .search-bar:focus{
+        outline: none;
+    }
+}
