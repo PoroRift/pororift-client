@@ -1,1 +1,11 @@
 <app-navigation-bar></app-navigation-bar>
+<mat-drawer-container class="row">
+    <mat-drawer #drawer
+        opened
+        mode="side">
+       <app-side-bar></app-side-bar>
+    </mat-drawer>
+    <mat-drawer-content>
+        Main Content
+    </mat-drawer-content>
+</mat-drawer-container>

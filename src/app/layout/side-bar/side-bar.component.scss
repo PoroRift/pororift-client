@@ -1,0 +1,13 @@
+
+:host{
+    div{
+        .menu-item{
+            padding: 40px;
+            cursor: pointer;
+        }
+        .menu-item:hover{
+            color: white;
+            background: #673ab7;
+        }
+    }
+}
