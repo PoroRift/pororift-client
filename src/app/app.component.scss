@@ -1,9 +1,9 @@
 
 :host{
-    mat-drawer-container{
-        height: -webkit-fill-available;
+    mat-sidenav-container{
+        height: 100vh;
         overflow-x: hidden;
-        mat-drawer-content{
+        mat-sidenav-content{
             background: url('https://bit.ly/2Oksjq1');
             height: -webkit-fill-available;
             background-size: cover;

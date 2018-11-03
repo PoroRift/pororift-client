@@ -1,17 +1,23 @@
 
 :host{
-    .logo{
-        padding: 0;
-        margin-right: 30px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 5px;
+    mat-toolbar{
+        z-index: 2;
+        position: relative;
+        mat-toolbar-row{
+            display: flex;
+            .logo{
+                height: 100%;
+            }
+            .search-bar{
+                border-radius: 10px;
+                border: none;
+                height: 30px;
+                font-size: 20px;
+            }
+            .search-bar:focus{
+                outline: none;
+            }
+        }
     }
-    .search-bar{
-        border-radius: 10px;
-        border: none;
-    }
-    .search-bar:focus{
-        outline: none;
-    }
+        
 }
