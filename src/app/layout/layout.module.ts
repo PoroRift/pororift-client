@@ -14,7 +14,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     SharedModule
   ],
   exports: [
-    SideBarComponent
+    SideBarComponent,
+    NavigationBarComponent
   ]
 })
 export class LayoutModule { }
