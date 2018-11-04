@@ -1,8 +1,13 @@
+@import '../styles/variables';
 
 :host{
     mat-sidenav-container{
         height: 100vh;
         overflow-x: hidden;
+        mat-sidenav{
+            color: white;
+            background-color: #002171;
+        }
         mat-sidenav-content{
             background: url('https://bit.ly/2Oksjq1');
             height: -webkit-fill-available;

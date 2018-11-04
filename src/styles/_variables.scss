@@ -1,0 +1,40 @@
+@import '~@angular/material/theming';
+
+$mat-black: (
+  50: #000a12,
+  100: #000a12,
+  200: #000a12,
+  300: #000a12,
+  400: #000a12,
+  500: #000a12,
+  600: #000a12,
+  700: #000a12,
+  800: #000a12,
+  900: #000a12,
+  A100: #000a12,
+  A200: #000a12,
+  A400: #000a12,
+  A700: #000a12,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$pororift-primary: mat-palette($mat-black, 50);;
+$pororift-accent: mat-palette($mat-blue, 900);
+
+$pororift-warn: mat-palette($mat-red, 600);
+
+$pororift-theme: mat-light-theme($pororift-primary, $pororift-accent, $pororift-warn);

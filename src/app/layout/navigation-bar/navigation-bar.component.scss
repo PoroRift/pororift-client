@@ -11,8 +11,9 @@
             .search-bar{
                 border-radius: 10px;
                 border: none;
-                height: 30px;
-                font-size: 20px;
+                max-height: 30px;
+                font-size: 18px;
+                padding: 10px;
             }
             .search-bar:focus{
                 outline: none;
