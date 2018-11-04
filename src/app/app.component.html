@@ -1,7 +1,7 @@
-<app-navigation-bar></app-navigation-bar>
+<app-navigation-bar (toggleSideNav)="toggleSideNavEvent()"></app-navigation-bar>
 <mat-sidenav-container> 
     <mat-sidenav #drawer
-        opened
+        [(opened)]="opened"
         mode="side">
        <app-side-bar></app-side-bar>
     </mat-sidenav>

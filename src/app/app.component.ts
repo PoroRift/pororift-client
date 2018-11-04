@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public opened = true;
+
+  public toggleSideNavEvent(): void {
+    console.log(this.opened);
+    this.opened = !this.opened;
+  }
 }
