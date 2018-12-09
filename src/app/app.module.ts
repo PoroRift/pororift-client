@@ -1,10 +1,11 @@
+import { MatchViewerAppModule } from './match-viewer-app/match-viewer-app.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +13,9 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
-    LayoutModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    MatchViewerAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]

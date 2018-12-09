@@ -1,11 +1,2 @@
-<app-navigation-bar (toggleSideNav)="toggleSideNavEvent()"></app-navigation-bar>
-<mat-sidenav-container> 
-    <mat-sidenav #drawer
-        [(opened)]="opened"
-        mode="side">
-       <app-side-bar></app-side-bar>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        Main Content
-    </mat-sidenav-content>
-</mat-sidenav-container>
+<app-tool-bar></app-tool-bar>
+<app-match-viewer-layout></app-match-viewer-layout>

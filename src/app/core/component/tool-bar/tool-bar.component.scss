@@ -1,0 +1,26 @@
+:host{
+    mat-toolbar-row{
+        background: black;
+        .tool-bar-logo {
+            height: 100%;
+            background: url("../../../../assets/pororift-logo.png");
+            background-size: cover;
+            width:240px;
+        }
+        .tool-bar-search{
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border: none;
+            padding: 10px;
+            height: 30px;
+            width: 200px;
+            transition: ease-in-out, width .35s ease-in-out;
+        }
+        .tool-bar-search:focus{
+            width: 400px;
+        }
+    }
+        
+}

@@ -1,0 +1,37 @@
+:host{
+    .summoner-tile{
+        background: gray;
+        padding: 10px;
+        .summoner-champion-icon{
+            height: 80px;
+            width: 80px;
+        }
+        .summoner-spells{
+            .summoner-spell{
+                height: 30px;
+                width: 30px;
+            }
+        }
+        .summoner-info{
+            border-radius: 10px;
+            background: white;
+            border: 1px red solid;
+            padding: 10px;
+            .kda-label{
+                padding: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background: red;
+                color: white;
+            }
+            .kda {
+                padding: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top: 1px solid red;
+                border-right: 1px solid red;
+                border-bottom: 1px solid red;
+            }
+        }
+    }
+}

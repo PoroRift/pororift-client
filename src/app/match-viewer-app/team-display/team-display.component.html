@@ -1,0 +1,10 @@
+<div class="team-display" fxLayout="row">
+    <div 
+        fxLayout="column"
+        fxLayoutGap="10px">
+        <app-summoner-tile 
+            *ngFor="let summonerInfo of summonerInfos"
+            [summonerInfo]="summonerInfo">
+        </app-summoner-tile >
+    </div>
+</div>

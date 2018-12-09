@@ -1,0 +1,12 @@
+<div class="side-bar">
+    <ng-container *ngFor="let item of items">
+        <div class="side-bar-item" (click)="execFunction(item.functionName)">
+          <mat-icon *ngIf="item.icon !== undefined">
+            {{item.icon}}
+          </mat-icon>
+          <span *ngIf="item.icon === undefined">
+            {{item.name}}
+          </span>
+        </div>
+    </ng-container>
+</div>
