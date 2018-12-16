@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Champion } from '../match-viewer-model';
 
 @Component({
   selector: 'app-banned-display',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banned-display.component.scss']
 })
 export class BannedDisplayComponent implements OnInit {
+
+  @Input() bannedChampions: Champion[] = [];
 
   constructor() { }
 

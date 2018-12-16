@@ -7,7 +7,9 @@
             *ngFor="let summonerInfo of summonerInfos"
             [summonerInfo]="summonerInfo">
         </app-summoner-tile >
-        BANS
-        <app-banned-display></app-banned-display>
+        <span class="bans-text">BANS</span>
+        <app-banned-display
+          [bannedChampions]="bannedChampions">
+        </app-banned-display>
     </div>
 </div>

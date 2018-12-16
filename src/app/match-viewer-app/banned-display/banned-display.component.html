@@ -1,3 +1,9 @@
-<p>
-  banned-display works!
-</p>
+<div
+  fxLayout="row"
+  fxLayoutGap="3px">
+  <img
+    *ngFor="let bannedChampion of bannedChampions"
+    class="banned-champion-icon"
+    [src]="bannedChampion.championIcon"
+    [alt]="bannedChampion.championName" />
+</div>
