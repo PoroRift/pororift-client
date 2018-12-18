@@ -1,10 +1,15 @@
 <div class="team-display" fxLayout="row">
-    <div 
+    <div
+        fxLayoutAlign="center center"
         fxLayout="column"
-        fxLayoutGap="10px">
-        <app-summoner-tile 
+        fxLayoutGap="8px">
+        <app-summoner-tile
             *ngFor="let summonerInfo of summonerInfos"
             [summonerInfo]="summonerInfo">
         </app-summoner-tile >
+        <span class="bans-text">BANS</span>
+        <app-banned-display
+          [bannedChampions]="bannedChampions">
+        </app-banned-display>
     </div>
 </div>

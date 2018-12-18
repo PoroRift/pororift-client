@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SummonerInfo } from '../match-viewer-model';
+import { SummonerInfo, Champion } from '../match-viewer-model';
 
 @Component({
   selector: 'app-team-display',
@@ -13,6 +13,7 @@ import { SummonerInfo } from '../match-viewer-model';
 export class TeamDisplayComponent implements OnInit {
 
   public summonerInfos: SummonerInfo[];
+  public bannedChampions: Champion[];
 
   constructor() { }
 
@@ -26,7 +27,10 @@ export class TeamDisplayComponent implements OnInit {
   private mockSummonerInfo(): void {
     this.summonerInfos = [{
       summonerName: `Summoner's Name`,
-      championIcon: 'https://bit.ly/2UsaZUl',
+      champion: {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      },
       firstSpellIcon: {
         url: 'https://bit.ly/2QMvOe2',
         alt: 'heal'
@@ -39,7 +43,10 @@ export class TeamDisplayComponent implements OnInit {
       summonerRank: 'Gold 1'
     }, {
       summonerName: `Summoner's Name`,
-      championIcon: 'https://bit.ly/2UsaZUl',
+      champion: {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      },
       firstSpellIcon: {
         url: 'https://bit.ly/2QMvOe2',
         alt: 'heal'
@@ -51,6 +58,25 @@ export class TeamDisplayComponent implements OnInit {
       summonerKDA: { kill: 0, death: 0, assist: 0 },
       summonerRank: 'Gold 1'
     }];
+
+    this.bannedChampions = [
+      {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      }, {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      }, {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      }, {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      }, {
+        championName: 'Akali',
+        championIcon: 'https://bit.ly/2UsaZUl'
+      }
+    ];
   }
 
 }
