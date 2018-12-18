@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SummonerInfo } from '../match-viewer-model';
-import { Champion }
+import { SummonerInfo, Champion } from '../match-viewer-model';
 
 @Component({
   selector: 'app-team-display',
