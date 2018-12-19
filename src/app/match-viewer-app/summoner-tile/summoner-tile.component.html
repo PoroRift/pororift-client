@@ -1,11 +1,8 @@
 <div
   class="summoner-tile"
   fxLayout="row"
-  fxLayoutGap="20px"
+  fxLayoutGap="10px"
   fxLayoutAlign="start center">
-  <img
-    class="summoner-champion-icon"
-    [src]="summonerInfo.champion.championIcon" />
   <div
     class="summoner-spells"
     fxLayout="column"
@@ -19,6 +16,9 @@
       [src]="summonerInfo.secondSpellIcon.url"
       [alt]="summonerInfo.secondSpellIcon.alt">
   </div>
+  <img
+    class="summoner-champion-icon"
+    [src]="summonerInfo.champion.championIcon" />
   <div
     class="summoner-info"
     fxLayout="column">
