@@ -1,3 +1,9 @@
 
 :host{
+    .layout-content{
+        width: -webkit-fill-available;
+        app-match-display {
+            height: max-content;
+        }
+    }
 }
