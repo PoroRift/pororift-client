@@ -5,8 +5,9 @@
         fxLayoutGap="8px">
         <app-summoner-tile
             *ngFor="let summonerInfo of summonerInfos"
-            [summonerInfo]="summonerInfo">
-        </app-summoner-tile >
+            [summonerInfo]="summonerInfo"
+            [blueTeam]="teamPosition === 'right'">
+        </app-summoner-tile>
         <span class="bans-text">BANS</span>
         <app-banned-display
           [bannedChampions]="bannedChampions">

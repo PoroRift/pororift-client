@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SummonerInfo, Champion } from '../match-viewer-model';
 
 @Component({
@@ -12,6 +12,7 @@ import { SummonerInfo, Champion } from '../match-viewer-model';
  */
 export class TeamDisplayComponent implements OnInit {
 
+  @Input() teamPosition: string;
   public summonerInfos: SummonerInfo[];
   public bannedChampions: Champion[];
 
@@ -26,7 +27,6 @@ export class TeamDisplayComponent implements OnInit {
    */
   private mockSummonerInfo(): void {
     this.summonerInfos = [{
-      summonerName: `Summoner's Name`,
       champion: {
         championName: 'Akali',
         championIcon: 'https://bit.ly/2UsaZUl'
@@ -39,10 +39,12 @@ export class TeamDisplayComponent implements OnInit {
         url: 'https://bit.ly/2L326MC',
         alt: 'flash'
       },
-      summonerKDA: { kill: 0, death: 0, assist: 0 },
-      summonerRank: 'Gold 1'
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
     }, {
-      summonerName: `Summoner's Name`,
       champion: {
         championName: 'Akali',
         championIcon: 'https://bit.ly/2UsaZUl'
@@ -55,8 +57,11 @@ export class TeamDisplayComponent implements OnInit {
         url: 'https://bit.ly/2L326MC',
         alt: 'flash'
       },
-      summonerKDA: { kill: 0, death: 0, assist: 0 },
-      summonerRank: 'Gold 1'
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
     }];
 
     this.bannedChampions = [
