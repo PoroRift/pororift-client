@@ -1,0 +1,22 @@
+<div
+  class="summoner-info"
+  fxLayout="column">
+  <div class="summoner-name">
+    {{summonerDetail.summonerName}}
+  </div>
+  <div
+    class="summoner-detail"
+    fxLayout="row" fxLayoutGap="20px">
+    <div class="summoner-kda-view" fxLayout="row">
+      <div class="kda-label">KDA</div>
+      <div class="kda">
+        {{summonerDetail.summonerKDA.kill}} <b>/</b>
+        {{summonerDetail.summonerKDA.death}} <b>/</b>
+        {{summonerDetail.summonerKDA.assist}}
+      </div>
+    </div>
+    <div class="summoner-ranking">
+      Gold 1
+    </div>
+  </div>
+</div>
