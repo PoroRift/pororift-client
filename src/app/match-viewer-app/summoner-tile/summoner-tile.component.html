@@ -20,7 +20,7 @@
     <img
       class="summoner-champion-icon"
       [src]="summonerInfo.champion.championIcon" />
-    <app-summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></app-summoner-tile-detail>
+    <summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></summoner-tile-detail>
   </div>
 </ng-container>
 <ng-container *ngIf="blueTeam === undefined || !blueTeam">
@@ -29,7 +29,7 @@
     fxLayout="row"
     fxLayoutGap="10px"
     fxLayoutAlign="start center">
-    <app-summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></app-summoner-tile-detail>
+    <summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></summoner-tile-detail>
     <img
       class="summoner-champion-icon"
       [src]="summonerInfo.champion.championIcon" />

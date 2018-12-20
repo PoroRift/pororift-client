@@ -3,14 +3,14 @@
         fxLayoutAlign="center center"
         fxLayout="column"
         fxLayoutGap="8px">
-        <app-summoner-tile
+        <summoner-tile
             *ngFor="let summonerInfo of summonerInfos"
             [summonerInfo]="summonerInfo"
             [blueTeam]="teamPosition === 'right'">
-        </app-summoner-tile>
+        </summoner-tile>
         <span class="bans-text">BANS</span>
-        <app-banned-display
+        <banned-display
           [bannedChampions]="bannedChampions">
-        </app-banned-display>
+        </banned-display>
     </div>
 </div>

@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { SummonerInfo } from '../match-viewer-model';
 
 @Component({
-  selector: 'app-summoner-tile',
+  selector: 'summoner-tile',
   templateUrl: './summoner-tile.component.html',
   styleUrls: ['./summoner-tile.component.scss']
 })

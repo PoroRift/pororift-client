@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { SummonerInfo, Champion } from '../match-viewer-model';
 
 @Component({
-  selector: 'app-team-display',
+  selector: 'team-display',
   templateUrl: './team-display.component.html',
   styleUrls: ['./team-display.component.scss']
 })
