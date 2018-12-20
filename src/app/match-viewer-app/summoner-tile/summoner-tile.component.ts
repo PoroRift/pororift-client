@@ -9,6 +9,7 @@ import { SummonerInfo } from '../match-viewer-model';
 export class SummonerTileComponent implements OnInit {
 
   @Input() summonerInfo: SummonerInfo;
+  @Input() blueTeam: boolean;
 
   constructor() { }
 
