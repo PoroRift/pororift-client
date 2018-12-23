@@ -2,6 +2,16 @@
 :host{
     .summoner-info{
         padding: 4px;
+        .runes-build-click{
+            font-size: 8px;
+            .choice{
+                cursor: pointer;
+            }
+            .choice:hover{
+                color: white;
+                text-decoration: underline;
+            }
+        }
         .summoner-name{
             background: darkgray;
             width: 100px;

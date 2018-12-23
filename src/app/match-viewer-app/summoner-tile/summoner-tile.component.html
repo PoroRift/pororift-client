@@ -1,50 +1,107 @@
+<!-- Blue Team Tile -->
 <ng-container *ngIf="blueTeam">
-  <div
-    class="summoner-tile"
-    fxLayout="row"
-    fxLayoutGap="10px"
-    fxLayoutAlign="start center">
-    <div
-      class="summoner-spells"
-      fxLayout="column"
-      fxLayoutGap="5px">
-      <img
-        class="summoner-spell"
-        [src]="summonerInfo.firstSpellIcon.url"
-        [alt]="summonerInfo.firstSpellIcon.alt">
+  <div 
+    class="summoner-tile" 
+    style="margin-right: 20px">
+    <img 
+      class="mastery" 
+      src="https://bit.ly/2GBMod1"
+      style="right: -10px"
+      matTooltip="S8 DIAMOND 3"
+      matTooltipPosition="above">
+    <div 
+      class="tile"
+      fxLayout="row"
+      fxLayoutGap="10px"
+      fxLayoutAlign="start center"
+      style="background: #5072A8">
+      <div
+        class="summoner-spells"
+        fxLayout="column"
+        fxLayoutGap="5px">
         <img
-        class="summoner-spell"
-        [src]="summonerInfo.secondSpellIcon.url"
-        [alt]="summonerInfo.secondSpellIcon.alt">
+          class="summoner-spell"
+          [src]="summonerInfo.firstSpellIcon.url"
+          [alt]="summonerInfo.firstSpellIcon.alt">
+          <img
+          class="summoner-spell"
+          [src]="summonerInfo.secondSpellIcon.url"
+          [alt]="summonerInfo.secondSpellIcon.alt">
+      </div>
+      <div 
+        class="icons"
+        matTooltip="LEVEL 5 MASTERY   KDA 5/3/2"
+        matTooltipPosition="above">
+        <div 
+          class="badge-banner" 
+          style="margin-left: 2px">
+            <img 
+              class="badge-icon"
+                src="https://bit.ly/2VcZfpg">
+        </div>
+        <img
+            class="summoner-champion-icon"
+            [src]="summonerInfo.champion.championIcon" />    
+      </div>
+      <summoner-tile-detail 
+        [summonerDetail]="summonerInfo.summonerDetail"
+        [blueTeam]="blueTeam">
+      </summoner-tile-detail>
     </div>
-    <img
-      class="summoner-champion-icon"
-      [src]="summonerInfo.champion.championIcon" />
-    <summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></summoner-tile-detail>
   </div>
 </ng-container>
+
+
+
+<!-- Red Team Tile -->
 <ng-container *ngIf="blueTeam === undefined || !blueTeam">
-  <div
+  <div 
     class="summoner-tile"
-    fxLayout="row"
-    fxLayoutGap="10px"
-    fxLayoutAlign="start center">
-    <summoner-tile-detail [summonerDetail]="summonerInfo.summonerDetail"></summoner-tile-detail>
-    <img
-      class="summoner-champion-icon"
-      [src]="summonerInfo.champion.championIcon" />
-    <div
-      class="summoner-spells"
-      fxLayout="column"
-      fxLayoutGap="5px">
-      <img
-        class="summoner-spell"
-        [src]="summonerInfo.firstSpellIcon.url"
-        [alt]="summonerInfo.firstSpellIcon.alt">
+    style="margin-left: 20px">
+    <img 
+      class="mastery" 
+      src="https://bit.ly/2GBMod1"
+      style="left: -10px"
+      matTooltip="S8 DIAMOND 3"
+      matTooltipPosition="above">
+    <div 
+      class="tile"
+      fxLayout="row"
+      fxLayoutGap="10px"
+      fxLayoutAlign="start center"
+      style="background: #A35959">
+      <summoner-tile-detail 
+        [summonerDetail]="summonerInfo.summonerDetail"
+        [blueTeam]="blueTeam !== undefined && blueTeam">
+      </summoner-tile-detail>
+      <div 
+        class="icons"
+        matTooltip="LEVEL 5 MASTERY   KDA 5/3/2"
+        matTooltipPosition="above">
+        <div 
+          class="badge-banner"
+          style="right:0; margin-right: 2px">
+            <img 
+              class="badge-icon"
+              src="https://bit.ly/2VcZfpg">
+        </div>
         <img
-        class="summoner-spell"
-        [src]="summonerInfo.secondSpellIcon.url"
-        [alt]="summonerInfo.secondSpellIcon.alt">
+          class="summoner-champion-icon"
+          [src]="summonerInfo.champion.championIcon" />    
+      </div>
+      <div
+          class="summoner-spells"
+          fxLayout="column"
+          fxLayoutGap="5px">
+          <img
+            class="summoner-spell"
+            [src]="summonerInfo.firstSpellIcon.url"
+            [alt]="summonerInfo.firstSpellIcon.alt">
+            <img
+            class="summoner-spell"
+            [src]="summonerInfo.secondSpellIcon.url"
+            [alt]="summonerInfo.secondSpellIcon.alt">
+        </div>
     </div>
   </div>
 </ng-container> 

@@ -1,9 +1,47 @@
 <div
   class="summoner-info"
   fxLayout="column"
-  fxLayoutGap="10px">
-  <div class="summoner-name">
-    <!-- TODO: add actual data here, when ready  -->
+  fxLayoutGap="5px"
+  [style.alignItems]="(blueTeam) ? 'flex-start': 'flex-end'">
+  <div 
+    fxLayout="row" 
+    fxLayoutGap="20px"
+    fxLayoutAlign="start center">
+    <ng-container *ngIf="!blueTeam">
+      <div 
+        class="runes-build-click"
+        fxLayout="column">
+        <span 
+          class="choice"
+          (click)="openRunes()">
+          RUNES
+        </span>
+        <span 
+          class="choice"
+          (click)="openLastBuild()">
+          LAST BUILD
+        </span>
+      </div>
+    </ng-container>
+    <div class="summoner-name">
+        <!-- TODO: add actual data here, when ready  -->
+    </div>
+    <ng-container *ngIf="blueTeam">
+      <div 
+        class="runes-build-click"
+        fxLayout="column">
+        <span 
+          class="choice"
+          (click)="openRunes()">
+          RUNES
+        </span>
+        <span 
+          class="choice"
+          (click)="openLastBuild()">
+          LAST BUILD
+        </span>
+      </div>
+    </ng-container>
   </div>
   <div
     class="summoner-detail"

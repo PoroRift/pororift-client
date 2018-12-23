@@ -9,10 +9,19 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SummonerTileDetailComponent implements OnInit {
 
   @Input() summonerDetail: SummonerDetail;
+  @Input() blueTeam: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public openRunes(): void {
+    console.log('open runes!');
+  }
+
+  public openLastBuild(): void {
+    console.log('open last build!');
   }
 
 }
