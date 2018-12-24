@@ -1,18 +1,10 @@
 import { storiesOf } from '@storybook/angular';
-import { CommonModule } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { SummonerTileComponent } from './summoner-tile.component';
 
 storiesOf('Summoner Tile Display', module)
-  //.addDecorator((story) => {return `<div style={{ textAlign: 'center' }}>{story()}</div>`;})
   .add('with summoner', () => ({
     component: SummonerTileComponent,
-    moduleMetadata: {
-      imports: [ CommonModule ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-      declarations: [ SummonerTileComponent ]
-    },
     props: {
       summonerInfo: {
         summonerName: `Summoner's Name`,

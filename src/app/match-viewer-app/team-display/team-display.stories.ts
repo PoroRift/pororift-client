@@ -6,7 +6,6 @@ import { TeamDisplayComponent } from './team-display.component';
 import { SummonerTileComponent } from '../summoner-tile/summoner-tile.component';
 
 storiesOf('Team Display', module)
-  //.addDecorator((story) => {`<div style={{ textAlign: 'center' }}>{story()}</div>`})
   .add('with team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
