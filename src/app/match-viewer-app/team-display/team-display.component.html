@@ -8,8 +8,14 @@
             [summonerInfo]="summonerInfo">
         </app-summoner-tile >
         <span class="bans-text">BANS</span>
-        <app-banned-display
-          [bannedChampions]="bannedChampions">
-        </app-banned-display>
+        <div
+        fxLayout="row"
+        fxLayoutGap="4px">
+            <img
+                *ngFor="let bannedChampion of bannedChampions"
+                class="banned-champion-icon"
+                [src]="bannedChampion.championIcon"
+                [alt]="bannedChampion.championName" />
+        </div>
     </div>
 </div>

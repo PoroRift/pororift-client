@@ -1,9 +1,13 @@
 :host {
-    .team-display{
-      padding: 12px;
-      background-color: #5072A8;
-    }
-    .bans-text{
-      font-weight: 600;
-    }
+  .team-display{
+    padding: 12px;
+    background-color: #5072A8;
+  }
+  .bans-text{
+    font-weight: 600;
+  }
+  .banned-champion-icon{
+    height: 71px;
+    width: 71px;
+  }
 }
