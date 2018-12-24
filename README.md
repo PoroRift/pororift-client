@@ -1,4 +1,4 @@
-# Pororift Client
+# Pororift Client [![Build Status](https://travis-ci.com/PoroRift/pororift-client.svg?branch=master)](https://travis-ci.com/PoroRift/pororift-client)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.
 However, this project has been modified to use [jest](https://jestjs.io/).
