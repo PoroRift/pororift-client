@@ -6,9 +6,22 @@
 :host{
     .summoner-tile-left {
         margin-left: 20px;
+        .mastery{
+            left: -10px;
+        }
+        .badge-banner{
+            right: 0;
+            margin-right: 2px;
+        }
     }
     .summoner-tile-right {
         margin-right: 20px;
+        .mastery{
+            right: -10px;
+        }
+        .badge-banner{
+            margin-left: 2px;
+        }
     }
     .summoner-tile{
         position: relative;
@@ -22,12 +35,6 @@
             border-radius: 10px;
             width: 40px;
             height: 40px;
-        }
-        .mastery-left{
-            left: -10px;
-        }
-        .mastery-right{
-            right: -10px;
         }
         .tile {
             background: gray;
@@ -45,13 +52,6 @@
                         width: 20px;
                         height: 20px;
                     }
-                }
-                .badge-banner-left{
-                    margin-left: 2px;
-                }
-                .badge-banner-right{
-                    right: 0;
-                    margin-right: 2px;
                 }
                 .summoner-champion-icon{
                     height: 55px;
