@@ -1,0 +1,23 @@
+branches:
+  only:
+  - master
+  - /^deploy-.*$/
+  
+dist: trusty
+language: node_js
+node_js:
+  - "10"
+
+before_install:
+ - npm install
+ - npm test
+
+
+
+notifications:
+  email: false
+  # recipients:
+  #     - one@example.com
+  #     - other@example.com
+  #   on_success: never # default: change
+  #   on_failure: always # default: always
