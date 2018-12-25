@@ -1,11 +1,9 @@
 
 :host{
-    .match-viewer-body{
-        width: 100%;
-        height: 100%;
-        background-color: black;
+    .layout-content{
+        width: -webkit-fill-available;
         app-match-display {
-            
+            height: max-content;
         }
     }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-match-display',
+  selector: 'match-display',
   templateUrl: './match-display.component.html',
   styleUrls: ['./match-display.component.scss']
 })

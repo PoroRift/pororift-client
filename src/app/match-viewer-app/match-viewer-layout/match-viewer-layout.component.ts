@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { SideBar } from 'src/app/shared/interface/side-bar';
 
 @Component({
-  selector: 'app-match-viewer-layout',
+  selector: 'match-viewer-layout',
   templateUrl: './match-viewer-layout.component.html',
   styleUrls: ['./match-viewer-layout.component.scss']
 })

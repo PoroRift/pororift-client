@@ -8,7 +8,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./side-bar.component.scss']
 })
 export class SideBarComponent implements OnInit {
-
   @Input() items: SidebarItem[];
   @Output() actionHandler: EventEmitter<string> = new EventEmitter();
 
