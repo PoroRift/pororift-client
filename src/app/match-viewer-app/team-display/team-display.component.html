@@ -1,21 +1,19 @@
-<div class="team-display" fxLayout="row">
+<div class="team-display" 
+    fxLayoutAlign="center center"
+    fxLayout="column"
+    fxLayoutGap="8px">
+    <app-summoner-tile
+        *ngFor="let summonerInfo of summonerInfos"
+        [summonerInfo]="summonerInfo">
+    </app-summoner-tile >
+    <span class="bans-text">BANS</span>
     <div
-        fxLayoutAlign="center center"
-        fxLayout="column"
-        fxLayoutGap="8px">
-        <app-summoner-tile
-            *ngFor="let summonerInfo of summonerInfos"
-            [summonerInfo]="summonerInfo">
-        </app-summoner-tile >
-        <span class="bans-text">BANS</span>
-        <div
-        fxLayout="row"
-        fxLayoutGap="4px">
-            <img
-                *ngFor="let bannedChampion of bannedChampions"
-                class="banned-champion-icon"
-                [src]="bannedChampion.championIcon"
-                [alt]="bannedChampion.championName" />
-        </div>
+    fxLayout="row"
+    fxLayoutGap="4px">
+        <img
+            *ngFor="let bannedChampion of bannedChampions"
+            class="banned-champion-icon"
+            [src]="bannedChampion.championIcon"
+            [alt]="bannedChampion.championName" />
     </div>
 </div>
