@@ -9,12 +9,20 @@
     </summoner-tile>
     <span class="bans-text">BANS</span>
     <div
-    fxLayout="row"
-    fxLayoutGap="4px">
-        <img
-            *ngFor="let bannedChampion of bannedChampions"
-            class="banned-champion-icon"
-            [src]="bannedChampion.championIcon"
-            [alt]="bannedChampion.championName" />
+        cdkDropList 
+        (cdkDropListDropped)="drop($event)"
+        fxLayoutAlign="center center"
+        fxLayout="column"
+        fxLayoutGap="8px">
+        <summoner-tile
+            *ngFor="let summonerInfo of summonerInfos"
+            [summonerInfo]="summonerInfo"
+            [blueTeam]="teamPosition === 'right'"
+            cdkDrag>
+        </summoner-tile>
+        <span class="bans-text">BANS</span>
+        <banned-display
+          [bannedChampions]="bannedChampions">
+        </banned-display>
     </div>
 </div>

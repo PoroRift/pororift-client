@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SummonerInfo, Champion } from '../match-viewer-model';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'team-display',
@@ -23,6 +24,10 @@ export class TeamDisplayComponent implements OnInit {
     if (!this.summonerInfos || !this.bannedChampions) {
       this.mockSummonerInfo();
     }
+  }
+
+  public drop(event: CdkDragDrop<SummonerInfo>): void {
+    moveItemInArray(this.summonerInfos, event.previousIndex, event.currentIndex);
   }
 
   /**
@@ -49,8 +54,8 @@ export class TeamDisplayComponent implements OnInit {
       }
     }, {
       champion: {
-        championName: 'Akali',
-        championIcon: 'https://bit.ly/2UsaZUl'
+        championName: 'Tryndamere',
+        championIcon: 'https://riot.com/2ELPvMO'
       },
       firstSpellIcon: {
         url: 'https://bit.ly/2QMvOe2',
