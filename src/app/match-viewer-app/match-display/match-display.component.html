@@ -1,1 +1,7 @@
-<app-team-display></app-team-display>
+<div 
+    class="match-display"
+    fxLayout="row"
+    fxLayoutGap="10px">
+    <team-display [teamPosition]="'right'"></team-display>
+    <team-display [teamPosition]="'left'"></team-display>
+</div>

@@ -1,44 +1,46 @@
-<div
-  class="summoner-tile"
-  fxLayout="row"
-  fxLayoutGap="20px"
-  fxLayoutAlign="start center">
-  <img
-    class="summoner-champion-icon"
-    [src]="summonerInfo.champion.championIcon" />
-  <div
-    class="summoner-spells"
-    fxLayout="column"
-    fxLayoutGap="5px">
-    <img
-      class="summoner-spell"
-      [src]="summonerInfo.firstSpellIcon.url"
-      [alt]="summonerInfo.firstSpellIcon.alt">
-      <img
-      class="summoner-spell"
-      [src]="summonerInfo.secondSpellIcon.url"
-      [alt]="summonerInfo.secondSpellIcon.alt">
-  </div>
-  <div
-    class="summoner-info"
-    fxLayout="column">
-    <div class="summoner-name">
-      {{summonerInfo.summonerName}}
-    </div>
+<div 
+  class="summoner-tile" 
+  [ngClass]="(blueTeam) ? 'summoner-tile-right' : 'summoner-tile-left'">
+  <img 
+    class="mastery" 
+    src="https://bit.ly/2GBMod1"
+    matTooltip="S8 DIAMOND 3"
+    matTooltipPosition="above">
+  <div 
+    class="tile"
+    [fxLayout]="(blueTeam) ? 'row': 'row-reverse'"
+    fxLayoutGap="10px"
+    fxLayoutAlign="start center"
+    [style.background]="(blueTeam) ? '#5072A8' : '#A35959'">
     <div
-      class="summoner-detail"
-      fxLayout="row" fxLayoutGap="20px">
-      <div class="summoner-kda-view" fxLayout="row">
-        <div class="kda-label">KDA</div>
-        <div class="kda">
-          {{summonerInfo.summonerKDA.kill}} <b>/</b>
-          {{summonerInfo.summonerKDA.death}} <b>/</b>
-          {{summonerInfo.summonerKDA.assist}}
-        </div>
-      </div>
-      <div class="summoner-ranking">
-        Gold 1
-      </div>
+      class="summoner-spells"
+      fxLayout="column"
+      fxLayoutGap="5px">
+      <img
+        class="summoner-spell"
+        [src]="summonerInfo.firstSpellIcon.url"
+        [alt]="summonerInfo.firstSpellIcon.alt">
+        <img
+        class="summoner-spell"
+        [src]="summonerInfo.secondSpellIcon.url"
+        [alt]="summonerInfo.secondSpellIcon.alt">
     </div>
+    <div 
+      class="icons"
+      matTooltip="LEVEL 5 MASTERY   KDA 5/3/2"
+      matTooltipPosition="above">
+      <div class="badge-banner">
+          <img 
+            class="badge-icon"
+              src="https://bit.ly/2VcZfpg">
+      </div>
+      <img
+          class="summoner-champion-icon"
+          [src]="summonerInfo.champion.championIcon" />    
+    </div>
+    <summoner-tile-detail 
+      [summonerDetail]="summonerInfo.summonerDetail"
+      [blueTeam]="blueTeam">
+    </summoner-tile-detail>
   </div>
 </div>

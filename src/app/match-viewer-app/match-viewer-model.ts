@@ -10,10 +10,14 @@ export class SummonerKDA {
 }
 
 export class SummonerInfo {
-    summonerName: string;
+    summonerDetail: SummonerDetail;
     champion: Champion;
     firstSpellIcon: SpellIcon;
     secondSpellIcon: SpellIcon;
+}
+
+export class SummonerDetail {
+    summonerName: string;
     summonerKDA: SummonerKDA;
     summonerRank: string;
 }

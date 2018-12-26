@@ -1,10 +1,15 @@
-<div class="match-viewer-layout" fxLayout="row">
+<div 
+  class="match-viewer-layout" 
+  fxLayout="row">
   <app-side-bar 
     [items]="items" 
     (actionHandler)="eventHandler($event)">
   </app-side-bar>
-  <div class="match-viwer-body">
-    <app-match-display></app-match-display>
+  <div 
+    class="layout-content"
+    fxLayout="row"
+    fxLayoutAlign="center center">
+      <match-display></match-display>
   </div>
 </div>
 

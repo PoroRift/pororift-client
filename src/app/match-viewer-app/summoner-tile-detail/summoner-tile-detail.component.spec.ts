@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BannedDisplayComponent } from './banned-display.component';
+import { SummonerTileDetailComponent } from './summoner-tile-detail.component';
 
-describe('BannedDisplayComponent', () => {
-  let component: BannedDisplayComponent;
-  let fixture: ComponentFixture<BannedDisplayComponent>;
+describe('SummonerTileDetailComponent', () => {
+  let component: SummonerTileDetailComponent;
+  let fixture: ComponentFixture<SummonerTileDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannedDisplayComponent ]
+      declarations: [ SummonerTileDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BannedDisplayComponent);
+    fixture = TestBed.createComponent(SummonerTileDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
