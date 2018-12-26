@@ -8,13 +8,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SideBarComponent } from './component/side-bar/side-bar.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const MaterialModule = [
   BrowserAnimationsModule,
   MatIconModule,
   MatToolbarModule,
   MatSidenavModule,
-  FlexLayoutModule
+  FlexLayoutModule,
+  MatTooltipModule,
+  MatDialogModule
 ];
 
 @NgModule({

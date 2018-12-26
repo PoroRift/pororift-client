@@ -6,13 +6,15 @@ import { CommonModule } from '@angular/common';
 import { TeamDisplayComponent } from './team-display/team-display.component';
 import { SummonerTileComponent } from './summoner-tile/summoner-tile.component';
 import { SharedModule } from '../shared/shared.module';
+import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-tile-detail.component';
 
 @NgModule({
   declarations: [
     TeamDisplayComponent,
     MatchViewerLayoutComponent,
     MatchDisplayComponent,
-    SummonerTileComponent
+    SummonerTileComponent,
+    SummonerTileDetailComponent
   ],
   imports: [
     CommonModule,
