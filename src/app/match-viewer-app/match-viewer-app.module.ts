@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { TeamDisplayComponent } from './team-display/team-display.component';
 import { SummonerTileComponent } from './summoner-tile/summoner-tile.component';
 import { SharedModule } from '../shared/shared.module';
-import { BannedDisplayComponent } from './banned-display/banned-display.component';
 import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-tile-detail.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-til
     MatchViewerLayoutComponent,
     MatchDisplayComponent,
     SummonerTileComponent,
-    BannedDisplayComponent,
     SummonerTileDetailComponent
   ],
   imports: [
