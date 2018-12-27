@@ -1,21 +1,23 @@
 import { storiesOf } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { TeamDisplayComponent } from './team-display.component';
 import { SummonerTileComponent } from '../summoner-tile/summoner-tile.component';
+import { SummonerTileDetailComponent } from '../summoner-tile-detail/summoner-tile-detail.component';
 
 storiesOf('Team Display', module)
-  .add('with team', () => ({
+  .add('with 3 summoners on blue team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
-      imports: [ CommonModule ],
+      imports: [ CommonModule, FlexLayoutModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-      declarations: [ SummonerTileComponent ]
+      declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
     props: {
+      teamPosition: "right",
       summonerInfos: [{
-        summonerName: `Summoner's Name`,
         champion: {
           championName: 'Akali',
           championIcon: 'https://bit.ly/2UsaZUl'
@@ -28,10 +30,30 @@ storiesOf('Team Display', module)
           url: 'https://bit.ly/2L326MC',
           alt: 'flash'
         },
-        summonerKDA: { kill: 0, death: 0, assist: 0 },
-        summonerRank: 'Gold 1'
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
       }, {
-        summonerName: `Summoner's Name`,
+        champion: {
+          championName: 'Tryndamere',
+          championIcon: 'https://riot.com/2ELPvMO'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }, {
         champion: {
           championName: 'Akali',
           championIcon: 'https://bit.ly/2UsaZUl'
@@ -44,8 +66,125 @@ storiesOf('Team Display', module)
           url: 'https://bit.ly/2L326MC',
           alt: 'flash'
         },
-        summonerKDA: { kill: 0, death: 0, assist: 0 },
-        summonerRank: 'Gold 1'
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }],
+      bannedChampions: [
+        {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        }, {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        }, {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        }
+      ]
+    },
+  }))
+  .add('with 5 summoners on red team', () => ({
+    component: TeamDisplayComponent,
+    moduleMetadata: {
+      imports: [ CommonModule, FlexLayoutModule ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+      declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
+    },
+    props: {
+      teamPosition: "left",
+      summonerInfos: [{
+        champion: {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }, {
+        champion: {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }, {
+        champion: {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }, {
+        champion: {
+          championName: 'Tryndamere',
+          championIcon: 'https://riot.com/2ELPvMO'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
+      }, {
+        champion: {
+          championName: 'Akali',
+          championIcon: 'https://bit.ly/2UsaZUl'
+        },
+        firstSpellIcon: {
+          url: 'https://bit.ly/2QMvOe2',
+          alt: 'heal'
+        },
+        secondSpellIcon: {
+          url: 'https://bit.ly/2L326MC',
+          alt: 'flash'
+        },
+        summonerDetail: {
+          summonerName: `Summoner's Name`,
+          summonerKDA: { kill: 0, death: 0, assist: 0 },
+          summonerRank: 'Gold 1'
+        }
       }],
       bannedChampions: [
         {
