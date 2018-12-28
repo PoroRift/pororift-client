@@ -2,6 +2,7 @@
 :host{
     .layout-content{
         width: -webkit-fill-available;
+        width:  -moz-available;
         app-match-display {
             height: max-content;
         }

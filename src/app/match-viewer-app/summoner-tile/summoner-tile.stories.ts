@@ -8,7 +8,7 @@ import { SummonerTileComponent } from './summoner-tile.component';
 import { SummonerTileDetailComponent } from '../summoner-tile-detail/summoner-tile-detail.component';
 
 storiesOf('Summoner Tile Display', module)
-  .add('with blue team summoner', 
+  .add('with blue team summoner',
     withNotes({ text: 'On hover effects not yet working... Tried with MatTooltipModule, but no effect.' })(() => ({
     component: SummonerTileComponent,
     moduleMetadata: {

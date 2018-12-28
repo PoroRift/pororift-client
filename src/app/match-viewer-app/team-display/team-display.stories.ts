@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { storiesOf } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -11,12 +12,12 @@ storiesOf('Team Display', module)
   .add('with 3 summoners on blue team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
-      imports: [ CommonModule, FlexLayoutModule ],
+      imports: [ CommonModule, FlexLayoutModule, SharedModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
     props: {
-      teamPosition: "right",
+      teamPosition: 'right',
       summonerInfos: [{
         champion: {
           championName: 'Akali',
@@ -94,7 +95,7 @@ storiesOf('Team Display', module)
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
     props: {
-      teamPosition: "left",
+      teamPosition: 'left',
       summonerInfos: [{
         champion: {
           championName: 'Akali',
