@@ -90,7 +90,7 @@ storiesOf('Team Display', module)
   .add('with 5 summoners on red team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
-      imports: [ CommonModule, FlexLayoutModule ],
+      imports: [ CommonModule, FlexLayoutModule, SharedModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
