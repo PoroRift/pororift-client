@@ -13,13 +13,16 @@ import { SummonerInfo, Champion } from '../match-viewer-model';
 export class TeamDisplayComponent implements OnInit {
 
   @Input() teamPosition: string;
-  public summonerInfos: SummonerInfo[];
-  public bannedChampions: Champion[];
+  // Should this info come from match-display component instead?
+  @Input() summonerInfos: SummonerInfo[];
+  @Input() bannedChampions: Champion[];
 
   constructor() { }
 
   public ngOnInit(): void {
-    this.mockSummonerInfo();
+    if (!this.summonerInfos || !this.bannedChampions) {
+      this.mockSummonerInfo();
+    }
   }
 
   /**
