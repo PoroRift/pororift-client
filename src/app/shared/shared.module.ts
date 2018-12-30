@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SideBarComponent } from './component/side-bar/side-bar.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 const MaterialModule = [
   BrowserAnimationsModule,
@@ -18,7 +19,8 @@ const MaterialModule = [
   MatSidenavModule,
   FlexLayoutModule,
   MatTooltipModule,
-  MatDialogModule
+  MatDialogModule,
+  DragDropModule
 ];
 
 @NgModule({

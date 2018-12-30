@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SummonerInfo, Champion } from '../match-viewer-model';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'team-display',
@@ -23,6 +24,10 @@ export class TeamDisplayComponent implements OnInit {
     if (!this.summonerInfos || !this.bannedChampions) {
       this.mockSummonerInfo();
     }
+  }
+
+  public drop(event: CdkDragDrop<SummonerInfo>): void {
+    moveItemInArray(this.summonerInfos, event.previousIndex, event.currentIndex);
   }
 
   /**
@@ -49,8 +54,62 @@ export class TeamDisplayComponent implements OnInit {
       }
     }, {
       champion: {
-        championName: 'Akali',
-        championIcon: 'https://bit.ly/2UsaZUl'
+        championName: 'Tryndamere',
+        championIcon: 'https://riot.com/2ELPvMO'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
+    }, {
+      champion: {
+        championName: 'Ekko',
+        championIcon: 'https://riot.com/2TgikVB'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
+    }, {
+      champion: {
+        championName: 'Brad',
+        championIcon: 'https://riot.com/2R1nV5L'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
+    }, {
+      champion: {
+        championName: 'Evlynn',
+        championIcon: 'https://riot.com/2EZf2SC'
       },
       firstSpellIcon: {
         url: 'https://bit.ly/2QMvOe2',
