@@ -70,6 +70,60 @@ export class TeamDisplayComponent implements OnInit {
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
       }
+    }, {
+      champion: {
+        championName: 'Ekko',
+        championIcon: 'https://riot.com/2TgikVB'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
+    }, {
+      champion: {
+        championName: 'Brad',
+        championIcon: 'https://riot.com/2R1nV5L'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
+    }, {
+      champion: {
+        championName: 'Evlynn',
+        championIcon: 'https://riot.com/2EZf2SC'
+      },
+      firstSpellIcon: {
+        url: 'https://bit.ly/2QMvOe2',
+        alt: 'heal'
+      },
+      secondSpellIcon: {
+        url: 'https://bit.ly/2L326MC',
+        alt: 'flash'
+      },
+      summonerDetail: {
+        summonerName: `Summoner's Name`,
+        summonerKDA: { kill: 0, death: 0, assist: 0 },
+        summonerRank: 'Gold 1'
+      }
     }];
 
     this.bannedChampions = [
