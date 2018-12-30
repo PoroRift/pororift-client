@@ -7,6 +7,8 @@ import { TeamDisplayComponent } from './team-display/team-display.component';
 import { SummonerTileComponent } from './summoner-tile/summoner-tile.component';
 import { SharedModule } from '../shared/shared.module';
 import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-tile-detail.component';
+import { SummonerWindowFrameComponent } from './summoner-window-frame/summoner-window-frame.component';
+import { SummonerWindowContentComponent } from './summoner-window-content/summoner-window-content.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-til
     MatchViewerLayoutComponent,
     MatchDisplayComponent,
     SummonerTileComponent,
-    SummonerTileDetailComponent
+    SummonerTileDetailComponent,
+    SummonerWindowFrameComponent,
+    SummonerWindowContentComponent
   ],
   imports: [
     CommonModule,

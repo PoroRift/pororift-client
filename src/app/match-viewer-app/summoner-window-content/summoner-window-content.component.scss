@@ -1,0 +1,32 @@
+:host{
+  .window-content{
+    padding: 5px;
+    background-color: gray;
+    .section-header{
+      display: inline-block;
+      color: #dddddd;
+      margin: 2px 0 8px;
+    }
+    .rune-display{
+      margin-bottom: 8px;
+      .rune-description{
+        width: 100px;
+        height: 100px;
+        background-color: #cccccc;
+      }
+      .rune-icons{
+        padding: 5px;
+        span{
+          .rune-icon {
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+    }
+    .last-build-display{
+      background-color: pink;
+      height: 200px;
+    }
+  }
+}

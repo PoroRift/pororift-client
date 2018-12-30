@@ -1,0 +1,55 @@
+<div
+  class="window-content">
+  <span class="section-header">CURRENT RUNES</span>
+  <section 
+    class="rune-display"
+    fxLayoutAlign="space-between center">
+    <span class="rune-description"></span>
+    <div
+      class="rune-icons"
+      fxLayout="column"
+      fxLayoutGap="5px">
+      <span
+        fxLayoutAlign="flex-end">
+        <img
+          class="rune-icon"
+          [src]="runes.mainPath.icon"
+          [alt]="runes.mainPath.name"
+        />
+        <img 
+          *ngFor="let rune of runes.mainRunes"
+          class="rune-icon"
+          [src]="rune.icon"
+          [alt]="rune.name"
+        />
+      </span>
+      <span
+        fxLayout="row"
+        fxLayoutAlign="flex-end">
+        <img
+          class="rune-icon"
+          [src]="runes.secondaryPath.icon"
+          [alt]="runes.secondaryPath.name"
+        />
+        <img 
+          *ngFor="let rune of runes.secondaryRunes"
+          class="rune-icon"
+          [src]="rune.icon"
+          [alt]="rune.name"
+        />
+      </span>
+    </div>
+  </section>
+  <span class="section-header">LAST BUILD ON {{lastBuild.championName | uppercase}}</span>
+  <section
+    class="last-build-display">
+    <span
+      class="last-build-icons"
+      >
+      <img
+        *ngFor="let item of lastBuild.buildItems"
+        [src]="item.icon"
+        [alt]="item.name"/>
+    </span>
+  </section>
+</div>
