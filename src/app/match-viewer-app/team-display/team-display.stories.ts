@@ -16,7 +16,7 @@ storiesOf('Team Display', module)
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
     props: {
-      teamPosition: "right",
+      teamPosition: 'right',
       summonerInfos: [{
         champion: {
           championName: 'Akali',
@@ -94,7 +94,7 @@ storiesOf('Team Display', module)
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
     props: {
-      teamPosition: "left",
+      teamPosition: 'left',
       summonerInfos: [{
         champion: {
           championName: 'Akali',
