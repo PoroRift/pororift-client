@@ -1,5 +1,5 @@
 import { SidebarItem } from './../../shared/model/sidebar-item';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { SideBar } from 'src/app/shared/interface/side-bar';
 
 @Component({
@@ -16,9 +16,27 @@ export class MatchViewerLayoutComponent implements OnInit, SideBar {
     functionName: 'printNumberOne'
   }];
 
+  public analystWidth = 0;
+  private isOnBar = false;
+  private allowExpansion = false;
+  private prevMousePos = window.innerWidth + 1;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(e: any): void {
+    if (this.allowExpansion && (e.screenX - 10) > document.getElementById('side-bar').offsetWidth) {
+      this.analystWidth = this.analystWidth + (this.prevMousePos - e.screenX);
+    }
+    this.prevMousePos = e.screenX;
+  }
+
+  @HostListener('document:mouseup')
+  onmouseup(): void {
+    this.allowExpansion = false;
+    document.getElementsByTagName('body')[0].style.cursor = 'default';
   }
 
   public eventHandler(functionName: string): void {
@@ -40,5 +58,18 @@ export class MatchViewerLayoutComponent implements OnInit, SideBar {
   public printNumberOne(): void {
     console.log(1);
   }
+
+  public setOnBar(v: boolean) {
+    this.isOnBar = v;
+  }
+
+  public setClickMove(v: boolean) {
+    this.allowExpansion = this.isOnBar && v;
+    if (this.allowExpansion) {
+      document.getElementsByTagName('body')[0].style.cursor = 'ew-resize';
+    }
+  }
+
+
 
 }
