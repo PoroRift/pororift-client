@@ -1,3 +1,4 @@
+import { AnalystDrawerAppModule } from './../analyst-drawer-app/analyst-drawer-app.module';
 import { CoreModule } from './../core/core.module';
 import { MatchDisplayComponent } from './match-display/match-display.component';
 import { MatchViewerLayoutComponent } from './match-viewer-layout/match-viewer-layout.component';
@@ -19,7 +20,8 @@ import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-til
   imports: [
     CommonModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    AnalystDrawerAppModule
   ],
   exports: [
     MatchViewerLayoutComponent
