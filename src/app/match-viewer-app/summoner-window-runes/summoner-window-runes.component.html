@@ -1,7 +1,10 @@
 <section 
   class="rune-display"
-  fxLayoutAlign="space-between center">
-  <span class="rune-description"></span>
+  fxLayoutAlign="space-between flex-start">
+  <p 
+    class="rune-description"
+    [innerHTML]="runeDescription">
+  </p>
   <div
     class="rune-icons"
     fxLayout="column"
@@ -13,8 +16,11 @@
         [src]="runes.mainPath.icon"
         [alt]="runes.mainPath.name"
       />
-      <img 
-        *ngFor="let rune of runes.mainRunes"
+      <img
+        *ngFor="let rune of runes.mainRunes" 
+        (mouseenter)="onHover(rune)"
+        (mouseleave)="onHover()"
+        (click)="onClick(rune,$event.target)"
         class="rune-icon"
         [src]="rune.icon"
         [alt]="rune.name"
@@ -30,6 +36,9 @@
       />
       <img 
         *ngFor="let rune of runes.secondaryRunes"
+        (mouseenter)="onHover(rune)"
+        (mouseleave)="onHover()"
+        (click)="onClick(rune,$event.target)"
         class="rune-icon"
         [src]="rune.icon"
         [alt]="rune.name"

@@ -10,7 +10,7 @@ import { SummonerWindowRunesComponent } from '../summoner-window-runes/summoner-
 
 
 storiesOf('Summoner Window Frame', module)
-  .add('default', () => ({
+  .add('populated with content', () => ({
     component: SummonerWindowFrameComponent,
     moduleMetadata: {
       imports: [ SharedModule ],

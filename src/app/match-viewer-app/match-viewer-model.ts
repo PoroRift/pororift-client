@@ -29,6 +29,20 @@ export class BuildItem {
     cost: number;
 }
 
+export enum RunePath {
+    Domination,
+    Precision,
+    Inspiration,
+    Sorcery,
+    Resolve
+}
+
+export class Rune {
+    name: string;
+    description: string;
+    path: RunePath;
+}
+
 export class Champion {
   championName: string;
   championIcon: string;

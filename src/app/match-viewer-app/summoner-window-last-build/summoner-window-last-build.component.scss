@@ -1,9 +1,15 @@
 .last-build-display{
-  height: 170px;
   .last-build-icons{
     .build-icon{
       height: 50px;
       width: 50px;
     }
+    .active {
+      border: 1px solid red
+    }
+  }
+  .item-description{
+    display: block;
+    font-size: 12px;
   }
 }

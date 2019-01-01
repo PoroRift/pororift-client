@@ -1,17 +1,16 @@
 :host{
   .rune-display{
-    margin-bottom: 8px;
     .rune-description{
-      width: 100px;
-      height: 100px;
-      background-color: #cccccc;
+      font-size: 12px;
     }
     .rune-icons{
-      padding: 5px;
       span{
         .rune-icon {
           height: 50px;
           width: 50px;
+        }
+        .active {
+          border: 1px solid red
         }
       }
     }

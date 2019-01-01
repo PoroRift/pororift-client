@@ -7,7 +7,7 @@ import { SummonerWindowRunesComponent } from '../summoner-window-runes/summoner-
 import { SummonerWindowLastBuildComponent } from '../summoner-window-last-build/summoner-window-last-build.component';
 
 storiesOf('Summoner Window Content', module)
-  .add('default', () => ({
+  .add('with both runes and last build', () => ({
     component: SummonerWindowContentComponent,
     moduleMetadata: {
       imports: [ SharedModule ],
