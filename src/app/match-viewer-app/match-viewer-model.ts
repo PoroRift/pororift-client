@@ -22,6 +22,13 @@ export class SummonerDetail {
     summonerRank: string;
 }
 
+export class BuildItem {
+    name: string;
+    icon: string;
+    description: string;
+    cost: number;
+}
+
 export class Champion {
   championName: string;
   championIcon: string;

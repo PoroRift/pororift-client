@@ -7,31 +7,5 @@
       color: #dddddd;
       margin: 2px 0 8px;
     }
-    .rune-display{
-      margin-bottom: 8px;
-      .rune-description{
-        width: 100px;
-        height: 100px;
-        background-color: #cccccc;
-      }
-      .rune-icons{
-        padding: 5px;
-        span{
-          .rune-icon {
-            height: 50px;
-            width: 50px;
-          }
-        }
-      }
-    }
-    .last-build-display{
-      height: 170px;
-      .last-build-icons{
-        .build-icon{
-          height: 50px;
-          width: 50px;
-        }
-      }
-    }
   }
 }

@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { SummonerTileDetailComponent } from './summoner-tile-detail/summoner-tile-detail.component';
 import { SummonerWindowFrameComponent } from './summoner-window-frame/summoner-window-frame.component';
 import { SummonerWindowContentComponent } from './summoner-window-content/summoner-window-content.component';
+import { SummonerWindowRunesComponent } from './summoner-window-runes/summoner-window-runes.component';
+import { SummonerWindowLastBuildComponent } from './summoner-window-last-build/summoner-window-last-build.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SummonerWindowContentComponent } from './summoner-window-content/summon
     SummonerTileComponent,
     SummonerTileDetailComponent,
     SummonerWindowFrameComponent,
-    SummonerWindowContentComponent
+    SummonerWindowContentComponent,
+    SummonerWindowRunesComponent,
+    SummonerWindowLastBuildComponent
   ],
   imports: [
     CommonModule,
