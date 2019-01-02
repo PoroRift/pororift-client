@@ -1,16 +1,10 @@
-
 :host{
-    mat-sidenav-container{
-        height: 100vh;
-        overflow-x: hidden;
-        mat-sidenav{
-            color: white;
-            background-color: #002171;
-        }
-        mat-sidenav-content{
-            background: url('https://bit.ly/2RApjYv');
-            height: -webkit-fill-available;
-            background-size: cover;
-        }
+    .app{
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden !important;
+    }
+    match-viwer-layout {
+        user-select: none !important;
     }
 }

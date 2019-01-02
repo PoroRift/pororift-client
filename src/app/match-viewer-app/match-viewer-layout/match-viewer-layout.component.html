@@ -1,15 +1,42 @@
+
 <div 
   class="match-viewer-layout" 
   fxLayout="row">
-  <app-side-bar 
+  <side-bar 
+    id="side-bar"
     [items]="items" 
-    (actionHandler)="eventHandler($event)">
-  </app-side-bar>
+    (actionHandler)="eventHandler($event)"
+    fxFlex>
+  </side-bar>
   <div 
     class="layout-content"
     fxLayout="row"
-    fxLayoutAlign="center center">
+    fxLayoutAlign="center center"
+    fxFlex fxGrow="15">
       <match-display></match-display>
   </div>
+  <div 
+    class="analyst-bar"
+    fxLayout="row"
+    fxFlex="0 0 auto"
+    fxLayoutAlign="center center">
+    <div 
+      class="pull-bar"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      (mouseenter)="setOnBar(true)"
+      (mouseleave)="setOnBar(false)"
+      (mousedown)="setClickMove(true)">
+      <div 
+        class="pull-symbol">
+        |||
+      </div>
+    </div>
+    <analyst-drawer
+      [style.width]="analystWidth + 'px'">
+    </analyst-drawer>
+  </div>
 </div>
+
+  
 
