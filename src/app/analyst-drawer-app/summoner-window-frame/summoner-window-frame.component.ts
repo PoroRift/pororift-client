@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'summoner-window-frame',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SummonerWindowFrameComponent implements OnInit {
 
+  @Input() summonerName: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.summonerName = "doublelift";
   }
 
 }
