@@ -5,19 +5,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { MatchHistoryLayoutComponent } from './match-history-app/match-history-layout/match-history-layout.component';
+import { MatchHistoryAppModule } from './match-history-app/match-history-app.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatchHistoryLayoutComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     CoreModule,
-    MatchViewerAppModule
+    MatchViewerAppModule,
+    MatchHistoryAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]

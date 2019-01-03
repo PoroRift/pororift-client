@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Champion } from 'src/app/match-viewer-app/match-viewer-model';
 
 @Component({
   selector: 'match-tile',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./match-tile.component.scss']
 })
 export class MatchTileComponent implements OnInit {
+
+  @Input() victory: boolean;
+  @Input() champion: Champion;
 
   constructor() { }
 

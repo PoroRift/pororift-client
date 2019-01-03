@@ -1,0 +1,16 @@
+:host {
+  .profile-header {
+    width: 100vw;
+    height: 22vh;
+    background-color: lightgrey;
+    padding: 7px;
+  }
+  .summoner-badge {
+    position: absolute;
+    right: 7vw;
+    top: 22vh;
+  }
+  .summoner-matches {
+    width: 60vw;
+  }
+}
