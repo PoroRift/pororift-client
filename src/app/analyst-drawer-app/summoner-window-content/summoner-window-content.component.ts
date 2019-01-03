@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BuildItem } from '../match-viewer-model';
+import { BuildItem } from '../analyst-drawer-model';
 
 @Component({
   selector: 'summoner-window-content',

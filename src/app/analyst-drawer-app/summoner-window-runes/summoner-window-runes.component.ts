@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, EventEmitter } from '@angular/core';
-import { Rune } from '../match-viewer-model';
+import { Rune } from '../analyst-drawer-model';
 
 @Component({
   selector: 'summoner-window-runes',
