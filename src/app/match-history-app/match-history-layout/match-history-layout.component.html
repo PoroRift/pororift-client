@@ -1,0 +1,18 @@
+<div>
+  <div class="profile-header"
+    fxLayout="column"
+    fxLayoutAlign="flex-end flex-start">
+    <span>{{ summonerName | uppercase }}</span>
+  </div>
+  <summoner-summary-badge class="summoner-badge"></summoner-summary-badge>
+  <div
+    class="summoner-matches"
+    fxLayout="column"
+    fxLayoutAlign="">
+    <match-tile
+      *ngFor="let match of summonerMatches"
+      [champion]="match.champion"
+      [victory]="match.victory">
+    </match-tile>
+  </div>
+</div>
