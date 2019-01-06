@@ -1,7 +1,6 @@
-import { SharedModule } from './../../shared/shared.module';
 import { storiesOf } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { TeamDisplayComponent } from './team-display.component';
@@ -12,7 +11,7 @@ storiesOf('Team Display', module)
   .add('with 3 summoners on blue team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
-      imports: [ CommonModule, FlexLayoutModule, SharedModule ],
+      imports: [ CommonModule, SharedModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
@@ -90,7 +89,7 @@ storiesOf('Team Display', module)
   .add('with 5 summoners on red team', () => ({
     component: TeamDisplayComponent,
     moduleMetadata: {
-      imports: [ CommonModule, FlexLayoutModule, SharedModule ],
+      imports: [ CommonModule, SharedModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ SummonerTileComponent, SummonerTileDetailComponent ]
     },
