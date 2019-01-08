@@ -1,4 +1,6 @@
+import { MatchViewerService } from './../../core/services/match-viewer.service';
 import { Component, OnInit } from '@angular/core';
+import { SummonerInfo } from '../match-viewer-model';
 
 @Component({
   selector: 'match-display',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatchDisplayComponent implements OnInit {
 
-  constructor() { }
+  public redTeam: SummonerInfo[];
+  public blueTeam: SummonerInfo[];
+
+  constructor(private _matchViewerService: MatchViewerService) { }
 
   ngOnInit() {
+    this._matchViewerService.getLiveMatch('1234')
+      .subscribe(res => {
+        this.redTeam = res.matchViewer.slice(0, 5);
+        this.blueTeam = res.matchViewer.slice(5, res.matchViewer.length);
+      });
   }
 
 }

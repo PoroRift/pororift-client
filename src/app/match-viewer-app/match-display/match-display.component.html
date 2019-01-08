@@ -3,6 +3,12 @@
     fxLayout.lg="row"
     fxLayout.md="column"
     fxLayoutGap="10px">
-    <team-display [teamPosition]="'right'"></team-display>
-    <team-display [teamPosition]="'left'"></team-display>
+    <team-display 
+        [teamPosition]="'right'" 
+        [summonerInfos]="teamRed">
+    </team-display>
+    <team-display 
+        [teamPosition]="'left'"
+        [summonerInfos]="blueTeam">
+    </team-display>
 </div>

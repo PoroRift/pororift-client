@@ -21,7 +21,9 @@ export class TeamDisplayComponent implements OnInit {
   constructor() { }
 
   public ngOnInit(): void {
-    if (!this.summonerInfos || !this.bannedChampions) {
+    // un-comment when api ban champ is released
+    const demoLogic = !this.summonerInfos; // || !this.bannedChampions
+    if (demoLogic) {
       this.mockSummonerInfo();
     }
   }

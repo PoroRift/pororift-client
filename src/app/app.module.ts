@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { MatchHistoryAppModule } from './match-history-app/match-history-app.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatchHistoryAppModule } from './match-history-app/match-history-app.mod
     SharedModule,
     CoreModule,
     MatchViewerAppModule,
-    MatchHistoryAppModule
+    MatchHistoryAppModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
