@@ -1,0 +1,10 @@
+pipeline{
+    agent { label 'docker' }
+    stages {
+        stage ('build docker image') {
+            steps {
+                sh 'docker build -t pororift-client .'
+            }
+        }
+    }
+}
