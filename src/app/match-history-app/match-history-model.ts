@@ -1,6 +1,8 @@
-import { Champion } from "../match-viewer-app/match-viewer-model";
+import { Champion, KDA } from '../match-viewer-app/match-viewer-model';
 
 export class Match {
-    victory: boolean;
-    champion: Champion;
+  matchID: number;
+  victory: boolean;
+  champion: Champion;
+  kda: KDA;
 }

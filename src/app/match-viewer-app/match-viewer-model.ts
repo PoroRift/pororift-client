@@ -1,25 +1,31 @@
-export class SpellIcon {
-    url: string;
-    alt: string;
+import { RuneSet, BuildItem } from '../analyst-drawer-app/analyst-drawer-model';
+
+// https://na.leagueoflegends.com/en/game-info/summoners/spells/
+export class SummonerSpell {
+  icon: string;
+  name: string;
+  description: string;
 }
 
-export class SummonerKDA {
-    kill: number;
-    death: number;
-    assist: number;
+export class KDA {
+  kill: number;
+  death: number;
+  assist: number;
 }
 
 export class SummonerInfo {
-    summonerDetail: SummonerDetail;
-    champion: Champion;
-    firstSpellIcon: SpellIcon;
-    secondSpellIcon: SpellIcon;
+  summonerDetail: SummonerDetail;
+  champion: Champion;
+  firstSpellIcon: SummonerSpell;
+  secondSpellIcon: SummonerSpell;
+  runes: RuneSet;
+  lastBuild: BuildItem[];
 }
 
 export class SummonerDetail {
-    summonerName: string;
-    summonerKDA: SummonerKDA;
-    summonerRank: string;
+  summonerName: string;
+  summonerKDA: KDA;
+  summonerRank: string;
 }
 
 export class Champion {

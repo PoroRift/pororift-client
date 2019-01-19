@@ -7,21 +7,27 @@ import { Match } from '../match-history-model';
   styleUrls: ['./match-history-layout.component.scss']
 })
 export class MatchHistoryLayoutComponent implements OnInit {
-  
+
   @Input() summonerName: string;
   @Input() summonerMatches: Match[];
 
   constructor() { }
 
   ngOnInit() {
-    this.summonerName = "doublelift";
+    this.summonerName = 'doublelift';
     this.summonerMatches = [{
+      matchID: 0,
       victory: true,
       champion: {
         championName: 'Akali',
         championIcon: 'https://bit.ly/2UsaZUl'
+      },
+      kda: {
+        kill: 0,
+        death: 0,
+        assist: 0
       }
-    }]
+    }];
   }
 
 }
