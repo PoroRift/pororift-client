@@ -7,7 +7,11 @@ import { Rune } from '../analyst-drawer-model';
   styleUrls: ['./summoner-window-runes.component.scss']
 })
 export class SummonerWindowRunesComponent implements OnInit {
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
   @Input() runes: object;
   private defaultDescription: string;
   private runeDescription: string;
@@ -16,12 +20,21 @@ export class SummonerWindowRunesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+<<<<<<< HEAD
     this.defaultDescription = '';
   }
 
   onHover(rune: Rune) {
     this.runeDescription = !rune ?
       this.defaultDescription :
+=======
+    this.defaultDescription = "";
+  }
+
+  onHover(rune: Rune) {
+    this.runeDescription = !rune ? 
+      this.defaultDescription : 
+>>>>>>> master
       `<b>${rune.name}</b><br>${rune.description}`;
   }
 
@@ -29,6 +42,7 @@ export class SummonerWindowRunesComponent implements OnInit {
     this.defaultDescription = `<b>${rune.name}</b><br>${rune.description}`;
 
     // Check if user is unselecting selected item.
+<<<<<<< HEAD
     if (this.lastEventTarget && this.lastEventTarget === target) {
       target.classList.toggle('active');
       if (!target.classList.contains('active')) {
@@ -37,6 +51,17 @@ export class SummonerWindowRunesComponent implements OnInit {
     } else {
       target.classList.add('active');
       if (this.lastEventTarget) {
+=======
+    if(this.lastEventTarget && this.lastEventTarget === target) {
+      target.classList.toggle('active');
+      if(!target.classList.contains('active')) {
+        this.defaultDescription = "";
+      }
+    }
+    else {
+      target.classList.add('active');
+      if(this.lastEventTarget) {
+>>>>>>> master
         this.lastEventTarget.classList.remove('active');
       }
       this.lastEventTarget = target;

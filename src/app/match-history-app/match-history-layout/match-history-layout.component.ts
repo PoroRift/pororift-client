@@ -7,7 +7,6 @@ import { Match } from '../match-history-model';
   styleUrls: ['./match-history-layout.component.scss']
 })
 export class MatchHistoryLayoutComponent implements OnInit {
-
   @Input() summonerName: string;
   @Input() summonerMatches: Match[];
 

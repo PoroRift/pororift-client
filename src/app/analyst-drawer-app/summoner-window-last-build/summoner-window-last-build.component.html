@@ -1,0 +1,15 @@
+<section
+  class="last-build-display">
+  <span
+    class="last-build-icons">
+    <img
+      *ngFor="let item of lastBuild"
+      (mouseenter)="onHover(item.description)"
+      (mouseleave)="onHover()"
+      (click)="onClick(item.description,$event.target)"
+      class="build-icon"
+      [src]="item.icon"
+      [alt]="item.name"/>
+  </span>
+  <span class="item-description">{{itemDescription}}</span>
+</section>

@@ -1,0 +1,48 @@
+<section 
+  class="rune-display"
+  fxLayoutAlign="space-between flex-start">
+  <p 
+    class="rune-description"
+    [innerHTML]="runeDescription">
+  </p>
+  <div
+    class="rune-icons"
+    fxLayout="column"
+    fxLayoutGap="5px">
+    <span
+      fxLayoutAlign="flex-end">
+      <img
+        class="rune-icon"
+        [src]="runes.mainPath.icon"
+        [alt]="runes.mainPath.name"
+      />
+      <img
+        *ngFor="let rune of runes.mainRunes" 
+        (mouseenter)="onHover(rune)"
+        (mouseleave)="onHover()"
+        (click)="onClick(rune,$event.target)"
+        class="rune-icon"
+        [src]="rune.icon"
+        [alt]="rune.name"
+      />
+    </span>
+    <span
+      fxLayout="row"
+      fxLayoutAlign="flex-end">
+      <img
+        class="rune-icon"
+        [src]="runes.secondaryPath.icon"
+        [alt]="runes.secondaryPath.name"
+      />
+      <img 
+        *ngFor="let rune of runes.secondaryRunes"
+        (mouseenter)="onHover(rune)"
+        (mouseleave)="onHover()"
+        (click)="onClick(rune,$event.target)"
+        class="rune-icon"
+        [src]="rune.icon"
+        [alt]="rune.name"
+      />
+    </span>
+  </div>
+</section>

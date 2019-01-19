@@ -1,0 +1,11 @@
+:host{
+  .window-content{
+    padding: 5px;
+    background-color: gray;
+    .section-header{
+      display: inline-block;
+      color: #dddddd;
+      margin: 2px 0 8px;
+    }
+  }
+}

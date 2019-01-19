@@ -1,15 +1,13 @@
 :host{
-    .analyst-drawer-layout{
-        height: 100vh;
-        background: white;
-        .analyst-content{
-            width: 500px !important;
-            border: 1px solid black;
-            padding: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            overflow-wrap: unset;
-        }
+  .analyst-drawer-layout{
+    height: 100vh;
+    background: white;
+    .analyst-content{
+      padding: 8px;
+      width: 500px !important;
+      height: max-content;
+      overflow: hidden;
+      overflow-wrap: unset;
     }
-        
+  }
 }
