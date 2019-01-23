@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BuildItem } from '../analyst-drawer-model';
+import { BuildItem, RuneSet } from '../analyst-drawer-model';
 
 @Component({
   selector: 'summoner-window-content',
@@ -8,7 +8,7 @@ import { BuildItem } from '../analyst-drawer-model';
 })
 export class SummonerWindowContentComponent implements OnInit {
 
-  @Input() runes: object;
+  @Input() runes: RuneSet;
   @Input() lastBuild: BuildItem[];
   @Input() championName: string;
   // { mainPath: RunePath, mainRunes: Rune[], secondaryRunes: Rune[], secondaryPath: RunePath }
@@ -23,11 +23,11 @@ export class SummonerWindowContentComponent implements OnInit {
 
   private mockData(): void {
     this.runes = {
-      mainPath: {
+      primaryPath: {
         icon: 'https://bit.ly/2BUREmc',
         name: 'Sorcery'
       },
-      mainRunes: [{
+      primaryPathRunes: [{
           icon: 'https://bit.ly/2VdXYy4',
           name: 'Sorcery',
           description: 'PASSIVE: Gain 0.8% per Legend stack Life steal icon life steal, up to 8% with 10 stacks.'
@@ -52,7 +52,7 @@ export class SummonerWindowContentComponent implements OnInit {
         icon: 'https://bit.ly/2BUREmc',
         name: 'Sorcery'
       },
-      secondaryRunes: [{
+      secondaryPathRunes: [{
         icon: 'https://bit.ly/2VdXYy4',
         name: 'Sorcery',
         description: 'PASSIVE: Gain 0.8% per Legend stack Life steal icon life steal, up to 8% with 10 stacks.'
