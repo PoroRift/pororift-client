@@ -54,7 +54,33 @@ export class TeamDisplayComponent implements OnInit {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }, {
       champion: {
         championName: 'Tryndamere',
