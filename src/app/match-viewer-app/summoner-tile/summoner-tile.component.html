@@ -1,12 +1,12 @@
-<div 
-  class="summoner-tile" 
+<div
+  class="summoner-tile"
   [ngClass]="(blueTeam) ? 'summoner-tile-right' : 'summoner-tile-left'">
-  <img 
-    class="mastery" 
+  <img
+    class="mastery"
     src="https://bit.ly/2GBMod1"
     matTooltip="S8 DIAMOND 3"
     matTooltipPosition="above">
-  <div 
+  <div
     class="tile"
     [fxLayout]="(blueTeam) ? 'row': 'row-reverse'"
     fxLayoutGap="10px"
@@ -18,27 +18,27 @@
       fxLayoutGap="5px">
       <img
         class="summoner-spell"
-        [src]="summonerInfo.firstSpellIcon.url"
-        [alt]="summonerInfo.firstSpellIcon.alt">
+        [src]="summonerInfo.firstSpell.icon"
+        [alt]="summonerInfo.firstSpell.name">
         <img
         class="summoner-spell"
-        [src]="summonerInfo.secondSpellIcon.url"
-        [alt]="summonerInfo.secondSpellIcon.alt">
+        [src]="summonerInfo.secondSpell.icon"
+        [alt]="summonerInfo.secondSpell.name">
     </div>
-    <div 
+    <div
       class="icons"
       matTooltip="LEVEL 5 MASTERY   KDA 5/3/2"
       matTooltipPosition="above">
       <div class="badge-banner">
-          <img 
+          <img
             class="badge-icon"
               src="https://bit.ly/2VcZfpg">
       </div>
       <img
           class="summoner-champion-icon"
-          [src]="summonerInfo.champion.championIcon" />    
+          [src]="summonerInfo.champion.championIcon" />
     </div>
-    <summoner-tile-detail 
+    <summoner-tile-detail
       [summonerDetail]="summonerInfo.summonerDetail"
       [blueTeam]="blueTeam">
     </summoner-tile-detail>

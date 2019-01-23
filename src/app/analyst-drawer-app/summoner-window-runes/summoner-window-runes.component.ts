@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, EventEmitter } from '@angular/core';
-import { Rune } from '../analyst-drawer-model';
+import { Component, OnInit, Input } from '@angular/core';
+import { Rune, RuneSet } from '../analyst-drawer-model';
 
 @Component({
   selector: 'summoner-window-runes',
@@ -7,9 +7,9 @@ import { Rune } from '../analyst-drawer-model';
   styleUrls: ['./summoner-window-runes.component.scss']
 })
 export class SummonerWindowRunesComponent implements OnInit {
-  @Input() runes: object;
+  @Input() runes: RuneSet;
+  public runeDescription: string;
   private defaultDescription: string;
-  private runeDescription: string;
   private lastEventTarget: Element;
 
   constructor() { }

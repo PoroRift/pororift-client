@@ -16,8 +16,8 @@ export class KDA {
 export class SummonerInfo {
   summonerDetail: SummonerDetail;
   champion: Champion;
-  firstSpellIcon: SummonerSpell;
-  secondSpellIcon: SummonerSpell;
+  firstSpell: SummonerSpell;
+  secondSpell: SummonerSpell;
   runes: RuneSet;
   lastBuild: BuildItem[];
 }
