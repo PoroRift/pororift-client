@@ -27,6 +27,11 @@ export class SummonerWindowContentComponent implements OnInit {
         icon: 'https://bit.ly/2BUREmc',
         name: 'Sorcery'
       },
+      keystone: {
+        name: '',
+        icon: '',
+        description: ''
+      },
       primaryPathRunes: [{
           icon: 'https://bit.ly/2VdXYy4',
           name: 'Sorcery',
