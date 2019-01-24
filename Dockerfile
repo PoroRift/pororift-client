@@ -13,9 +13,8 @@ WORKDIR /node-source
 COPY . .
 
 RUN npm cache verify
-
-RUN npm install && \
-        npm run build
+RUN npm install 
+RUN npm run build
 
 FROM centos:7
 WORKDIR /app
