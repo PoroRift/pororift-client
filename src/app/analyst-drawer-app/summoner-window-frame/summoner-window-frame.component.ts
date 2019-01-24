@@ -12,7 +12,7 @@ export class SummonerWindowFrameComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.summonerName = "doublelift";
+    this.summonerName = 'doublelift';
   }
 
 }

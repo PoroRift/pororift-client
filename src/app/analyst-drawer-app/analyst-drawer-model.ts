@@ -1,20 +1,25 @@
-export enum RunePath {
-    Domination,
-    Precision,
-    Inspiration,
-    Sorcery,
-    Resolve
+export class RunePath {
+  name: string;
+  icon: string;
 }
 
 export class Rune {
-    name: string;
-    description: string;
-    path: RunePath;
+  name: string;
+  icon: string;
+  description: string;
+}
+
+export class RuneSet {
+  primaryPath: RunePath;
+  keystone: Rune;
+  primaryPathRunes: Rune[];
+  secondaryPath: RunePath;
+  secondaryPathRunes: Rune[];
 }
 
 export class BuildItem {
-    name: string;
-    icon: string;
-    description: string;
-    cost: number;
+  name: string;
+  icon: string;
+  description: string;
+  cost: number;
 }

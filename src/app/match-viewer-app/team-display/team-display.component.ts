@@ -39,91 +39,236 @@ export class TeamDisplayComponent implements OnInit {
         championName: 'Akali',
         championIcon: 'https://bit.ly/2UsaZUl'
       },
-      firstSpellIcon: {
-        url: 'https://bit.ly/2QMvOe2',
-        alt: 'heal'
+      firstSpell: {
+        icon: 'https://bit.ly/2QMvOe2',
+        name: 'heal',
+        description: 'Restores 90-345 Health (depending on champion level) and grants 30% Movement Speed '
+          + 'for 1 second to you and target allied champion. This healing is halved for units recently affected by Summoner Heal.'
       },
-      secondSpellIcon: {
-        url: 'https://bit.ly/2L326MC',
-        alt: 'flash'
+      secondSpell: {
+        icon: 'https://bit.ly/2L326MC',
+        name: 'flash',
+        description: `Teleports your champion a short distance toward your cursor's location.`
       },
       summonerDetail: {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }, {
       champion: {
         championName: 'Tryndamere',
         championIcon: 'https://riot.com/2ELPvMO'
       },
-      firstSpellIcon: {
-        url: 'https://bit.ly/2QMvOe2',
-        alt: 'heal'
+      firstSpell: {
+        icon: 'https://bit.ly/2QMvOe2',
+        name: 'heal',
+        description: 'Restores 90-345 Health (depending on champion level) and grants 30% Movement Speed '
+          + 'for 1 second to you and target allied champion. This healing is halved for units recently affected by Summoner Heal.'
       },
-      secondSpellIcon: {
-        url: 'https://bit.ly/2L326MC',
-        alt: 'flash'
+      secondSpell: {
+        icon: 'https://bit.ly/2L326MC',
+        name: 'flash',
+        description: `Teleports your champion a short distance toward your cursor's location.`
       },
       summonerDetail: {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }, {
       champion: {
         championName: 'Ekko',
         championIcon: 'https://riot.com/2TgikVB'
       },
-      firstSpellIcon: {
-        url: 'https://bit.ly/2QMvOe2',
-        alt: 'heal'
+      firstSpell: {
+        icon: 'https://bit.ly/2QMvOe2',
+        name: 'heal',
+        description: 'Restores 90-345 Health (depending on champion level) and grants 30% Movement Speed '
+          + 'for 1 second to you and target allied champion. This healing is halved for units recently affected by Summoner Heal.'
       },
-      secondSpellIcon: {
-        url: 'https://bit.ly/2L326MC',
-        alt: 'flash'
+      secondSpell: {
+        icon: 'https://bit.ly/2L326MC',
+        name: 'flash',
+        description: `Teleports your champion a short distance toward your cursor's location.`
       },
       summonerDetail: {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }, {
       champion: {
         championName: 'Brad',
         championIcon: 'https://riot.com/2R1nV5L'
       },
-      firstSpellIcon: {
-        url: 'https://bit.ly/2QMvOe2',
-        alt: 'heal'
+      firstSpell: {
+        icon: 'https://bit.ly/2QMvOe2',
+        name: 'heal',
+        description: 'Restores 90-345 Health (depending on champion level) and grants 30% Movement Speed '
+          + 'for 1 second to you and target allied champion. This healing is halved for units recently affected by Summoner Heal.'
       },
-      secondSpellIcon: {
-        url: 'https://bit.ly/2L326MC',
-        alt: 'flash'
+      secondSpell: {
+        icon: 'https://bit.ly/2L326MC',
+        name: 'flash',
+        description: `Teleports your champion a short distance toward your cursor's location.`
       },
       summonerDetail: {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }, {
       champion: {
         championName: 'Evlynn',
         championIcon: 'https://riot.com/2EZf2SC'
       },
-      firstSpellIcon: {
-        url: 'https://bit.ly/2QMvOe2',
-        alt: 'heal'
+      firstSpell: {
+        icon: 'https://bit.ly/2QMvOe2',
+        name: 'heal',
+        description: 'Restores 90-345 Health (depending on champion level) and grants 30% Movement Speed '
+          + 'for 1 second to you and target allied champion. This healing is halved for units recently affected by Summoner Heal.'
       },
-      secondSpellIcon: {
-        url: 'https://bit.ly/2L326MC',
-        alt: 'flash'
+      secondSpell: {
+        icon: 'https://bit.ly/2L326MC',
+        name: 'flash',
+        description: `Teleports your champion a short distance toward your cursor's location.`
       },
       summonerDetail: {
         summonerName: `Summoner's Name`,
         summonerKDA: { kill: 0, death: 0, assist: 0 },
         summonerRank: 'Gold 1'
-      }
+      },
+      runes: {
+        primaryPath: {
+          name: 'Sorcery',
+          icon: ''
+        },
+        keystone: {
+          name: '',
+          icon: '',
+          description: ''
+        },
+        primaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }],
+        secondaryPath: {
+          name: '',
+          icon: ''
+        },
+        secondaryPathRunes: [{
+          name: '',
+          icon: '',
+          description: ''
+        }]
+      },
+      lastBuild: []
     }];
 
     this.bannedChampions = [
