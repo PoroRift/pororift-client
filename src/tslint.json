@@ -1,5 +1,10 @@
 {
     "extends": "../tslint.json",
+    "linterOptions": {
+        "exclude": [
+            "*.stories.ts"
+        ]
+    },
     "rules": {
         "directive-selector": [
             true,
