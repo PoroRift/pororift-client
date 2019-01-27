@@ -9,7 +9,7 @@ import { BuildItem } from '../analyst-drawer-model';
 export class SummonerWindowLastBuildComponent implements OnInit {
 
   @Input() lastBuild: BuildItem[];
-  private itemDescription: string;
+  public itemDescription: string;
   private defaultDescription: string;
   private lastEventTarget: Element;
 
