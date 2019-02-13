@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MatchHistoryLayoutComponent } from './match-history-layout.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler/src/core';
 
 describe('MatchHistoryLayoutComponent', () => {
   let component: MatchHistoryLayoutComponent;
@@ -8,6 +9,7 @@ describe('MatchHistoryLayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ MatchHistoryLayoutComponent ]
     })
     .compileComponents();
