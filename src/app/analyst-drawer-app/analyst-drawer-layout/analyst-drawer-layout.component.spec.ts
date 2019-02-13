@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AnalystDrawerLayoutComponent } from './analyst-drawer-layout.component';
+import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler/src/core';
 
 describe('AnalystDrawerLayoutComponent', () => {
   let component: AnalystDrawerLayoutComponent;
@@ -8,6 +11,8 @@ describe('AnalystDrawerLayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ CommonModule, SharedModule ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [ AnalystDrawerLayoutComponent ]
     })
     .compileComponents();
