@@ -4,6 +4,7 @@ import { SummonerWindowRunesComponent } from './summoner-window-runes.component'
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler/src/core';
+import { runesMock } from 'src/app/shared/mock-data/runes-mock';
 
 describe('SummonerWindowRunesComponent', () => {
   let component: SummonerWindowRunesComponent;
@@ -21,6 +22,7 @@ describe('SummonerWindowRunesComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SummonerWindowRunesComponent);
     component = fixture.componentInstance;
+    component.runes = runesMock;
     fixture.detectChanges();
   });
 
