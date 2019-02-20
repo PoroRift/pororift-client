@@ -30,7 +30,10 @@ storiesOf('Summoner Window : Runes', module)
           }, {
             icon: 'https://bit.ly/2VdXYy4',
             name: 'Overheal',
-            description: 'PASSIVE: Heal power Healing in excess of your maximum health is converted into a Hybrid resistances icon shield for an amount of up to 10 (+ 10% of maximum health). The shield lasts 6 seconds, and then decays over a 2-second duration. Receiving healing, dealing or taking damage will refresh the shield duration to 6 seconds. \n The rate of conversion is 40% for self-healing and 300% for healing from allies.'
+            description: 'PASSIVE: Heal power Healing in excess of your maximum health is converted into a Hybrid ' +
+              'resistances icon shield for an amount of up to 10 (+ 10% of maximum health). The shield lasts 6 seconds, ' +
+              'and then decays over a 2-second duration. Receiving healing, dealing or taking damage will refresh the shield ' +
+              'duration to 6 seconds. \n The rate of conversion is 40% for self-healing and 300% for healing from allies.'
           }
         ],
         secondaryPath: {

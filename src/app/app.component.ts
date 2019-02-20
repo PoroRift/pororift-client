@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SideBar } from './shared/interface/side-bar';
 
 @Component({
   selector: 'app-root',
