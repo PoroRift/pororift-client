@@ -14,6 +14,7 @@ COPY . .
 
 RUN npm cache verify
 RUN npm install 
+RUN npm run test
 RUN npm run build
 
 FROM centos:7
